@@ -1,0 +1,8 @@
+.link-animated {
+  display: inherit;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}

@@ -1,0 +1,44 @@
+<!-- header -->
+<app-header></app-header>
+
+<!-- content -->
+<section class="section is-medium">
+  <div class="container is-fluid">
+    <div class="fixed-grid has-12-cols">
+      <div class="grid">
+        <div class="cell is-col-span-7 is-col-span-12-mobile">
+          <h2 class="subtitle is-5">Hi, my name's</h2>
+          <h1 class="title is-2">Donovan Pardo. <span class="is-size-3">👋🏼</span></h1>
+          <h2 class="is-size-5 mt-32">I'm a Front-End Developer, Angular enthusiast, and F1 follower. I've been building software for over 10 years. I've always been fond of working in team-driven environments, applying UX/UI principles, SOLID principles, responsive web design, and user-centered design methodologies.</h2>
+          <p class="is-size-4 mt-16">🇨🇴 🇺🇸</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- networks -->
+<section class="section has-background-grey-light">
+  <div class="container is-fluid">
+    <div class="fixed-grid has-1-cols-mobile has-2-cols-tablet has-4-cols-desktop">
+      <div class="grid">
+        <div class="cell" *ngFor="let i of networks">
+          <a class="link-animated" [href]="i.link" target="_blank">
+            <app-card>
+              <div class="is-flex is-align-items-center">
+                <app-image [src]="'./assets/images/networks/' + i.image" [dimension]="46" [alt]="i.name"></app-image>
+                <div class="ml-16">
+                  <div class="title is-4">{{ i.name }}</div>
+                  <div class="subtitle is-size-6 mt-3">{{ '@' + i.user }}</div>
+                </div>
+              </div>
+            </app-card>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<app-footer></app-footer>

@@ -1,0 +1,17 @@
+@each $font-weight, $font-style in (300, Light), (400, Regular), (600, Bold) {
+  @font-face {
+    font-family: 'ElectronicArtsDisplay';
+    src: url(/assets/fonts/ea/ElectronicArtsDisplay-#{$font-style}.woff2) format('woff');
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+}
+
+@each $font-weight, $font-style in (300, Light), (400, Regular), (600, Bold) {
+  @font-face {
+    font-family: 'ElectronicArtsText';
+    src: url(/assets/fonts/ea/ElectronicArtsText-#{$font-style}.woff2) format('woff');
+    font-weight: $font-weight;
+    font-style: normal;
+  }
+}

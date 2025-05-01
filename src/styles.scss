@@ -1,0 +1,174 @@
+$prefix: 'dpx-';
+
+$family-sans-serif: ElectronicArtsText, Verdana, Helvetica, Arial, sans-serif;
+$title-family: ElectronicArtsDisplay, Verdana, Helvetica, Arial, sans-serif;
+
+$primary: #83d2e2;
+$secondary: #282c3f;
+// $red: #f05a54;
+$red: #df6459;
+$blue: #3860be;
+$grey-darker: #111827;
+$grey-dark: #4b5563;
+$grey-light: #ebebeb;
+$custom-colors: ( 'secondary': $secondary );
+
+$body-color: $secondary;
+$body-background-color: white;
+
+$text: $secondary;
+// $text-invert: fn.bulmaFindColorInvert($text) !default;
+// $text-weak: iv.$grey !default;
+$text-strong: $secondary;
+
+$dimensions: 46 64 192;
+$spacing-values: ('0': 0, '6': 0.375rem, '8': 0.5rem, '16': 1rem, '24': 1.5rem, '32': 2rem, '48': 3rem, '64': 4rem);
+
+$footer-padding: 3rem 2rem;
+
+// Colors
+// $black: #222729;
+// $grey: #9294ac;
+// $grey-light: #bbc2ca;
+// $grey-lighter: #e7ecf2;
+// $white-ter: #f1f4f7;
+// $turquoise: #4cddaf;
+// $blue: #4857d5;
+// $red: #ff0046;
+// $yellow: #feb969;
+
+// $grey-10: rgba($grey, .1);
+// $grey-10-invert: findColorInvert($grey-10);
+
+// $red-10: rgba($red, .1);
+// $red-10-invert: findColorInvert($red-10);
+
+// $custom-colors: (
+//   "grey-10": ($grey-10, $grey-10-invert),
+//   "red-10": ($red-10, $red-10-invert),
+// );
+
+// $black-bis:    hsl(0, 0%, 7%) !default
+// $black-ter:    hsl(0, 0%, 14%) !default
+
+// $grey:         hsl(0, 0%, 48%) !default
+// $grey-light:   hsl(0, 0%, 71%) !default
+// $grey-lighter: hsl(0, 0%, 86%) !default
+// $grey-lightest: hsl(0, 0%, 93%) !default
+
+// $white-ter:    hsl(0, 0%, 96%) !default
+// $white-bis:    hsl(0, 0%, 98%) !default
+// $white:        hsl(0, 0%, 100%) !default
+
+// $orange:       hsl(14,  100%, 53%) !default
+// $yellow:       hsl(48,  100%, 67%) !default
+// $green:        hsl(141, 53%,  53%) !default
+// $turquoise:    hsl(171, 100%, 41%) !default
+// $cyan:         hsl(204, 71%,  53%) !default
+// $blue:         hsl(217, 71%,  53%) !default
+// $purple:       hsl(271, 100%, 71%) !default
+// $red:          hsl(348, 86%, 61%) !default
+
+// $primary: $red;
+// $info: $blue;
+// $success: $turquoise;
+
+// Typography
+// $size-1: 3rem;
+// $size-2: 2.5rem;
+// $size-3: 2rem;
+$size-4: 1.25rem;
+$size-5: 1.125rem;
+// $size-6: 1rem;
+$size-7: 0.875rem;
+// $body-font-size: $size-6;
+$text: $grey-dark;
+// $text-invert: findColorInvert($text);
+// $text-light: $grey;
+// $text-strong: $grey-darker;
+
+// Container
+$gap: 32px;
+$container-max-width: 1024px + (2 * $gap);
+
+// // Box
+// $box-padding: 1rem;
+// $box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+
+// // Titles
+// $text-strong: $black;
+
+// // Form
+// $label-weight: normal;
+// $label-color: $grey;
+// $label-size: 10px;
+// // Input
+// $input-color: $black;
+// $input-border-color: $grey-light;
+// $input-hover-border-color: $grey-light;
+// $input-icon-color: $grey-light;
+// $input-icon-active-color: $black;
+
+// $input-focus-border-color: $grey-light;
+// $input-focus-box-shadow-color: bulmaRgba($grey-light, 0.25);
+
+// // Radius
+// // $radius-small: 2px;
+// // $radius: 4px;
+// $radius-large: .5rem;
+// // $radius-rounded: 290486px;
+
+
+// Navbar
+// $navbar-background-color: $white-ter;
+// $navbar-height: 4rem;
+// $navbar-item-img-max-height: 4rem;
+// $navbar-z: 1000;
+// $navbar-fixed-z: 1000;
+
+// // Modal
+// $modal-z: 1000;
+
+// // Icon
+// $icon-dimensions-medium: 2.5rem;
+
+// // <hr>
+// $hr-background-color: $grey-light;
+// $hr-height: .0625rem;
+// // $hr-margin: 1.5rem 0;
+
+// // Scroll
+// $scroll-size: 5px;
+
+
+
+@use 'bulma/sass' with (
+  $cssvars-prefix: $prefix,
+  $family-sans-serif: $family-sans-serif,
+  $title-family: $title-family,
+  $body-color: $body-color,
+  $body-background-color: $body-background-color,
+  $custom-colors: $custom-colors,
+  $primary: $primary,
+  $red: $red,
+  $grey-darker: $grey-darker,
+  $grey-dark: $grey-dark,
+  $grey-light: $grey-light,
+  $text: $text,
+  $text-strong: $text-strong,
+  $dimensions: $dimensions,
+  $spacing-values: $spacing-values,
+  $card-shadow: none,
+  $card-radius: 0,
+  $footer-background-color: $secondary,
+  $footer-color: $primary,
+  $footer-padding: $footer-padding,
+);
+
+@use './theme';
+
+:root {
+  --ti-cursor-font-family: #{$title-family};
+  --ti-cursor-font-weight: 400;
+  --ti-cursor-color: #{$primary};
+}

@@ -1,0 +1,3 @@
+<figure class="image" [ngClass]="dimensions()">
+  <img [ngClass]="{ 'is-rounded': rounded, 'has-radius-normal': !rounded }" [src]="src | imageSize: dimension" [alt]="alt">
+</figure>
