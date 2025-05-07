@@ -3,5 +3,4 @@ export interface Network {
   user: string;
   image: string;
   link: string;
-  color: string;
 }
