@@ -1,25 +1,33 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, signal, viewChild } from '@angular/core';
 import TypeIt from 'typeit';
 
 @Component({
     selector: 'app-header',
     imports: [],
     templateUrl: './header.component.html',
-    styleUrl: './header.component.scss'
+    styleUrl: './header.component.scss',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderComponent implements AfterViewInit {
 
-  @ViewChild('typing') typingElement!: ElementRef;
-
-  private typeitInstance!: TypeIt;
+  private readonly typingElement = viewChild<ElementRef<HTMLAnchorElement>>('typing');
+  private readonly typeitInstance = signal<TypeIt | null>(null);
 
   ngAfterViewInit() {
     this.startTyping();
   }
 
   public startTyping() {
-    if (!this.typeitInstance) {
-      this.typeitInstance = new TypeIt(this.typingElement.nativeElement, {
+    const typingAnchor = this.typingElement();
+
+    if (!typingAnchor) {
+      return;
+    }
+
+    let instance = this.typeitInstance();
+
+    if (!instance) {
+      instance = new TypeIt(typingAnchor.nativeElement, {
         strings: '',
         speed: 80,
         startDelay: 900,
@@ -37,13 +45,13 @@ export class HeaderComponent implements AfterViewInit {
       .move(null, { to: 'END', delay: 300 })
       .type('<span class="has-text-primary">x</span>', { delay: 900 })
       .go();
+      this.typeitInstance.set(instance);
+      return;
     }
 
-    if (this.typeitInstance.is('completed')) {
-      this.typeitInstance.delete(undefined, { delay: 300 }).flush(() => this.typeitInstance.reset(undefined).go());
+    if (instance.is('completed')) {
+      instance.delete(undefined, { delay: 300 }).flush(() => instance.reset(undefined).go());
     }
-
-    const abc = 'lorem'
   }
 
 }

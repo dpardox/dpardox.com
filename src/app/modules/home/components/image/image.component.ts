@@ -1,24 +1,22 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 
 @Component({
     selector: 'app-image',
     templateUrl: './image.component.html',
     styleUrls: ['./image.component.scss'],
-    standalone: false
+    standalone: false,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ImageComponent implements OnInit {
+export class ImageComponent {
 
-  @Input() src!: string;
-  @Input() alt: string = '';
-  @Input() dimension: number = 64;
-  @Input() rounded: boolean = false;
+  readonly src = input.required<string>();
+  readonly alt = input('');
+  readonly dimension = input(64);
+  readonly rounded = input(false);
 
-  constructor() { }
-
-  ngOnInit(): void { }
-
-  public dimensions() {
-    return `is-${this.dimension}x${this.dimension}`;
-  }
+  readonly dimensionClass = computed(() => {
+    const size = this.dimension();
+    return `is-${size}x${size}`;
+  });
 
 }
