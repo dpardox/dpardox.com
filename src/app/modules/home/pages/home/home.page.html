@@ -1,5 +1,5 @@
 <!-- header -->
-<app-header></app-header>
+<app-header />
 
 <!-- content -->
 <section class="section is-medium">
@@ -28,7 +28,7 @@
               <app-card>
                 <!-- TODO (dpardo): change flex to grid -->
                 <div class="is-flex is-align-items-center">
-                  <app-image [src]="'./assets/images/networks/' + network.image" [dimension]="46" [alt]="network.name"></app-image>
+                  <app-image [src]="'./assets/images/networks/' + network.image" [dimension]="46" [alt]="network.name" />
                   <div class="ml-16">
                     <div class="title is-4">{{ network.name }}</div>
                     <div class="subtitle is-size-6 mt-3">{{ '@' + network.user }}</div>
@@ -44,6 +44,4 @@
 </section>
 
 <!-- footer -->
-<app-footer></app-footer>
-
-<!-- TODO (dpardo): simplify tags to short closing -->
+<app-footer />
