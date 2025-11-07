@@ -22,19 +22,21 @@
   <div class="container is-fluid">
     <div class="fixed-grid has-1-cols-mobile has-2-cols-tablet has-4-cols-desktop">
       <div class="grid">
-        <div class="cell" *ngFor="let i of networks">
-          <a class="link-animated" [href]="i.link" target="_blank">
-            <app-card>
-              <div class="is-flex is-align-items-center">
-                <app-image [src]="'./assets/images/networks/' + i.image" [dimension]="46" [alt]="i.name"></app-image>
-                <div class="ml-16">
-                  <div class="title is-4">{{ i.name }}</div>
-                  <div class="subtitle is-size-6 mt-3">{{ '@' + i.user }}</div>
+        @for (i of networks; track i) {
+          <div class="cell">
+            <a class="link-animated" [href]="i.link" target="_blank">
+              <app-card>
+                <div class="is-flex is-align-items-center">
+                  <app-image [src]="'./assets/images/networks/' + i.image" [dimension]="46" [alt]="i.name"></app-image>
+                  <div class="ml-16">
+                    <div class="title is-4">{{ i.name }}</div>
+                    <div class="subtitle is-size-6 mt-3">{{ '@' + i.user }}</div>
+                  </div>
                 </div>
-              </div>
-            </app-card>
-          </a>
-        </div>
+              </app-card>
+            </a>
+          </div>
+        }
       </div>
     </div>
   </div>
