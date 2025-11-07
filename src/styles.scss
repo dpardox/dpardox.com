@@ -141,7 +141,7 @@ $container-max-width: 1024px + (2 * $gap);
 // $scroll-size: 5px;
 
 
-
+// TODO (dpardo): Change bulma to tailwindcss
 @use 'bulma/sass' with (
   $cssvars-prefix: $prefix,
   $family-sans-serif: $family-sans-serif,

@@ -1,4 +1,4 @@
-import { Component, Host } from '@angular/core';
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImageComponent } from './image.component';
@@ -9,7 +9,7 @@ xdescribe('ImageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImageComponent ]
+      imports: [ImageComponent]
     }).compileComponents();
   });
 
@@ -26,7 +26,8 @@ xdescribe('ImageComponent', () => {
 
 @Component({
     template: `<app-image src="./assets/images/avatar.jpg" [dimension]="192" [rounded]="true"></app-image>`,
-    standalone: false
+    standalone: true,
+    imports: [ImageComponent]
 })
 class HostComponent { }
 
@@ -36,7 +37,7 @@ xdescribe('ImageComponent from HostComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HostComponent, ImageComponent ]
+      imports: [HostComponent]
     }).compileComponents();
   });
 

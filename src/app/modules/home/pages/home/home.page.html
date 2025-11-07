@@ -26,6 +26,7 @@
           <div class="cell">
             <a class="link-animated" [href]="network.link" target="_blank">
               <app-card>
+                <!-- TODO (dpardo): change flex to grid -->
                 <div class="is-flex is-align-items-center">
                   <app-image [src]="'./assets/images/networks/' + network.image" [dimension]="46" [alt]="network.name"></app-image>
                   <div class="ml-16">
@@ -44,3 +45,5 @@
 
 <!-- footer -->
 <app-footer></app-footer>
+
+<!-- TODO (dpardo): simplify tags to short closing -->

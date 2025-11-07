@@ -1,10 +1,14 @@
+import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+
+import { ImageSizePipe } from '../../pipes/image-size.pipe';
 
 @Component({
     selector: 'app-image',
+    standalone: true,
+    imports: [NgClass, ImageSizePipe],
     templateUrl: './image.component.html',
     styleUrls: ['./image.component.scss'],
-    standalone: false,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImageComponent {

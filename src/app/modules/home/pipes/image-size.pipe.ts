@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
     name: 'imageSize',
-    standalone: false
+    standalone: true
 })
 export class ImageSizePipe implements PipeTransform {
 

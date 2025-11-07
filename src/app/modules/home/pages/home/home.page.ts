@@ -1,10 +1,17 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+
+import { CardComponent } from '@core/components/card/card.component';
+import { FooterComponent } from '@core/components/footer/footer.component';
+import { HeaderComponent } from '@core/components/header/header.component';
+
+import { ImageComponent } from '../../components/image/image.component';
 import { Network } from '../../interfaces/network.interface';
 
 @Component({
+    standalone: true,
+    imports: [HeaderComponent, FooterComponent, CardComponent, ImageComponent],
     templateUrl: './home.page.html',
     styleUrls: ['./home.page.scss'],
-    standalone: false,
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomePage {
