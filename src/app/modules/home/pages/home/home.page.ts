@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Network } from '../../interfaces/network.interface';
 
 @Component({
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss']
+    templateUrl: './home.page.html',
+    styleUrls: ['./home.page.scss'],
+    standalone: false
 })
 export class HomePage {
 

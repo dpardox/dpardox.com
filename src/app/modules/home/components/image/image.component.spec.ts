@@ -25,7 +25,8 @@ xdescribe('ImageComponent', () => {
 });
 
 @Component({
-  template: `<app-image src="./assets/images/avatar.jpg" [dimension]="192" [rounded]="true"></app-image>`
+    template: `<app-image src="./assets/images/avatar.jpg" [dimension]="192" [rounded]="true"></app-image>`,
+    standalone: false
 })
 class HostComponent { }
 
