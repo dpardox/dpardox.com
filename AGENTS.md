@@ -6,6 +6,13 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use strict type checking
 - Prefer type inference when the type is obvious
 - Avoid the `any` type; use `unknown` when type is uncertain
+- Use clean code
+- Organize the code as if it were a book: keep each thing close to where it is used.
+- Use SOLID principles
+- Follow Sonar-recommended guidelines.
+- Write all code in English, except for user-facing texts, which must remain in Spanish.
+- Do not add comments to the code.
+- Always follow Hexagonal Architecture (Ports and Adapters). The core domain must be framework-agnostic and contain only business logic. External concerns (UI, databases, APIs, frameworks, libraries) must be implemented as adapters and must depend on the core, never the other way around.
 
 ## Angular Best Practices
 
@@ -48,6 +55,11 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use the async pipe to handle observables
 - Do not assume globals like (`new Date()`) are available.
 - Do not write arrow functions in templates (they are not supported).
+- Prefer self-closing tags for components and elements without content (e.g. <app-icon />, <img />, <input />). Avoid unnecessary opening and closing tags when no inner content is required.
+
+## Styles
+
+- Prefer utility-first CSS using Tailwind CSS framework.
 
 ## Services
 
