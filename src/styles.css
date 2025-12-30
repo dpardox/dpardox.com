@@ -1,3 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Electronic Arts Display";
+  src: url("/fonts/ea/ElectronicArtsDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronic Arts Display";
+  src: url("/fonts/ea/ElectronicArtsDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronic Arts Display";
+  src: url("/fonts/ea/ElectronicArtsDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("/fonts/ea/ElectronicArtsText-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("/fonts/ea/ElectronicArtsText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Electronic Arts Text";
+  src: url("/fonts/ea/ElectronicArtsText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --spacing: 1px;
+  --font-ea-display: "Electronic Arts Display", ui-sans-serif, system-ui, sans-serif;
+  --font-ea-text: "Electronic Arts Text", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-ea-text);
+}
