@@ -8,11 +8,7 @@
   "projects": {
     "dpardox": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "type": "page"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
