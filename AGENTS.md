@@ -13,6 +13,7 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Write all code in English, except for user-facing texts, which must remain in Spanish.
 - Do not add comments to the code.
 - Always follow Hexagonal Architecture (Ports and Adapters). The core domain must be framework-agnostic and contain only business logic. External concerns (UI, databases, APIs, frameworks, libraries) must be implemented as adapters and must depend on the core, never the other way around.
+- All class properties and methods MUST explicitly declare an access modifier (private, protected, or public) and MUST evaluate the use of readonly; implicit public members are not allowed.
 
 ## Angular Best Practices
 
