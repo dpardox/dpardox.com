@@ -1,21 +1,23 @@
-<section class="p-48 bg-gray-100 bg-[url('/images/backgrounds/laptop.jpg')] bg-laptop bg-fixed bg-center bg-cover">
-  <div class="px-32">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-24">
-      @for (network of networks(); track network.name) {
-        <a [href]="network.link" target="_blank">
-          <app-card>
-            <div class="flex items-center">
-              <figure>
-                <img src="images/networks/{{ network.image }}" alt="{{ network.name }}" width="46" height="46" />
-              </figure>
-              <div class="ms-16">
-                <div class="text-2xl font-extrabold">{{ network.name }}</div>
-                <div class="text-base text-gray-500 mt-3">{{ '@' + network.user }}</div>
+<section class="bg-[url('/images/backgrounds/laptop.jpg')] bg-laptop bg-fixed bg-center bg-cover">
+  <div class="p-48 bg-[linear-gradient(rgba(220,20,60,.1),rgba(70,130,180,.1))]">
+    <div class="px-32">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-24">
+        @for (network of networks(); track network.name) {
+          <a [href]="network.link" target="_blank">
+            <app-card>
+              <div class="flex items-center">
+                <figure>
+                  <img src="images/networks/{{ network.image }}" alt="{{ network.name }}" width="46" height="46" />
+                </figure>
+                <div class="ms-16">
+                  <div class="text-2xl font-extrabold">{{ network.name }}</div>
+                  <div class="text-base text-gray-500 mt-3">{{ '@' + network.user }}</div>
+                </div>
               </div>
-            </div>
-          </app-card>
-        </a>
-      }
+            </app-card>
+          </a>
+        }
+      </div>
     </div>
   </div>
 </section>
