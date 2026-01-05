@@ -2,7 +2,7 @@
 
 @theme {
   --spacing: 1px;
-  --font-sans: Verdana, Helvetica, Arial, sans-serif;
+  --font-sans: "Nunito", Helvetica, Arial, sans-serif;
   --color-primary: #00162b;
   --color-secondary: #db0a40;
 }
@@ -10,5 +10,14 @@
 @layer base {
   body {
     @apply text-[#212529] font-sans leading-normal;
+  }
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
