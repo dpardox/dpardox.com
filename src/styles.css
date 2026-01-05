@@ -3,6 +3,8 @@
 @theme {
   --spacing: 1px;
   --font-sans: Verdana, Helvetica, Arial, sans-serif;
+  --color-primary: #00162b;
+  --color-secondary: #db0a40;
 }
 
 @layer base {
