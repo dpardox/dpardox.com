@@ -1,9 +1,14 @@
-<footer class="relative bg-primary px-32 py-48 before:absolute before:left-0 before:top-0 before:block before:h-4 before:w-full before:bg-[linear-gradient(90deg,#ff4800_0,#d054bc_26.56%,#0092f4_54.69%,#0092f4_54.7%,#15c474_100%)] before:content-['']">
-  <div class="container">
-    <div class="mb-64">
-      <app-logo mode="dark" />
+<footer class="relative bg-primary before:absolute before:inset-0 before:z-0 before:bg-[url('/images/backgrounds/tribal.png')] before:bg-repeat before:invert before:content-[''] after:absolute after:left-0 after:top-0 after:z-10 after:block after:h-4 after:w-full after:bg-[linear-gradient(90deg,#ff4800_0,#d054bc_26.56%,#0092f4_54.69%,#0092f4_54.7%,#15c474_100%)] after:content-['']">
+  <div class="px-24 py-48 relative z-20">
+    <div class="container">
+      <div class="mb-64">
+        <app-logo mode="dark" />
+      </div>
+      <p class="text-gray-400 mb-6 flex flex-col sm:flex-row sm:items-center sm:gap-8">
+        <span>© 2012-{{ year() }} Donovan Pardo.</span>
+        <span>All Rights Reserved.</span>
+      </p>
+      <p class="text-white">Made in <strong>Colombia</strong>.</p>
     </div>
-    <p class="text-gray-400 mb-6">© 2012-{{ year() }} Donovan Pardo. All Rights Reserved.</p>
-    <p class="text-white">Made in <strong>Colombia</strong>.</p>
   </div>
 </footer>
