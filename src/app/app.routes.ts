@@ -6,6 +6,10 @@ export const routes: Routes = [
     loadComponent: () => import('@features/home/home'),
   },
   {
+    path: 'cv',
+    loadComponent: () => import('@features/cv/cv'),
+  },
+  {
     path: '**',
     redirectTo: '',
     pathMatch: 'full'
