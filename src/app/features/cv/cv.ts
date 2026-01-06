@@ -7,6 +7,6 @@ import { Web } from "@layouts/web/web";
   templateUrl: './cv.html',
   styleUrl: './cv.css',
 })
-export default class Cv {
+export default class CV {
 
 }
