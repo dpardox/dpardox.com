@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Banner } from './components/banner/banner';
 import { Networks } from '@features/home/components/networks/networks';
-import { Web } from "src/app/layout/web/web";
+import { Web } from "@layouts/web/web";
 
 @Component({
   selector: 'app-home',

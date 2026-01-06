@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Web } from "src/app/layout/web/web";
+import { Web } from "@layouts/web/web";
 
 @Component({
   selector: 'app-cv',
