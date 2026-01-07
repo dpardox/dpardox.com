@@ -1,12 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { Card } from '@shared/components/card/card';
-
-export interface Network {
-  name: string;
-  user: string;
-  image: string;
-  link: string;
-}
+import { NetworksService } from '@features/home/services/networks.service';
 
 @Component({
   selector: 'app-networks',
@@ -16,10 +11,8 @@ export interface Network {
 })
 export class Networks {
 
-  readonly networks = signal<Network[]>([
-    { name: 'LinkedIn', user: 'linkedin.com/in/dpardox', link: 'https://www.linkedin.com/in/dpardox', image: 'linkedin.png' },
-    { name: 'GitHub', user: '@dpardox', link: 'https://github.com/dpardox', image: 'github.png' },
-    { name: 'Codewars', user: '@dpardox', link: 'https://www.codewars.com/users/dpardox/completed_solutions', image: 'codewars.svg' },
-  ]);
+  private readonly networksService = inject(NetworksService);
+
+  readonly networks = toSignal(this.networksService.getNetworks(), { initialValue: [] });
 
 }
