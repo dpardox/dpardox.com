@@ -1,28 +1,17 @@
 
 You are an expert in TypeScript, Angular, and scalable web application development. You write functional, maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
-## Development Style Guidelines
+## Clean Code Guidelines
 
-- When analyzing or generating code for this project, prioritize **simplicity and Developer Experience (DX)** over architectural complexity.
-- Organize code like a book: declare functions, methods, and helpers in the same order they are used. If a() calls b() and b() calls c(), then a must appear first, followed by b, then c, so the code can be read top-down without jumping around.
+- Organize code like a book: declare functions, methods, and helpers in the same order they are used. If a() calls b() and c(), then a must appear first, followed by b, then c, so the code can be read top-down without jumping around.
 
-## Domain Driven Design (DDD) Principles
+## Arquitectural Guidelines
 
 - Use Domain-Driven Design (DDD) as the main architectural approach for the frontend.
-- Structure the app into three main layers: Presentation, Application (including Domain), and Infrastructure.
-- Keep the Presentation layer focused only on UI concerns (components, views, pages, UI state, and user interactions).
-- Prevent the Presentation layer from knowing implementation details of APIs, storage, or external services.
-- Place all business rules, entities, value objects, and domain logic inside the Domain area of the Application layer.
-- Use the Application layer to orchestrate use cases, coordinate domain logic, and expose application services to the Presentation layer.
-- Ensure the Application layer depends only on abstractions, never on concrete infrastructure implementations.
-- Put all external concerns (APIs, HTTP clients, storage, SDKs, third-party services) in the Infrastructure layer.
-- Implement adapters in Infrastructure that fulfill the interfaces defined in the Application/Domain layer.
-- Make dependencies flow inward: Infrastructure → Application → Domain, never the other way around.
-- Allow multiple data sources by swapping Infrastructure adapters without changing Presentation or Domain logic.
-- Use DTOs or mappers only at the boundaries between Infrastructure and Application.
-- Keep domain models independent from UI frameworks, HTTP formats, or persistence details.
-- Favor explicit use cases over generic services in the Application layer.
-- Design features around business concepts, not technical layers.
+- Structure the app into three main layers: Presentation (`features/` and `layouts/`), Application (`core/`), and Infrastructure (`infrastructure/`).
+- DTOs should be defined in the Infrastructure layer at `dtos/` in a sigle file per bounded context when defining API-related types, split them by responsibility: use suffix `Payload` for request DTOs and `Response` for response DTOs.
+- The Domain interfaces should be defined in the Domain layer at `core/interfaces/`.
+- The Domain enums should be defined in the Domain layer at `core/enums/`.
 
 ## TypeScript Best Practices
 
@@ -49,6 +38,8 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Use `NgOptimizedImage` for all static images.
   - `NgOptimizedImage` does not work for inline base64 images.
 - File naming: Do not use suffixes like .component.ts, .service.ts, .module.ts, etc. Filenames should be clean and intention-based (e.g., user.ts, auth.ts, dashboard.ts) and their role should be inferred from folder structure and context, not from the filename itself.
+- Class structure order: Place Angular-specific properties first (DI, @Input, @Output, queries, signals), then getters/setters, then lifecycle hooks (ngOnInit near the top, ngOnDestroy at the end), and finally the rest of the public and private methods.
+- Separate words in file names with hyphens link: Separate words within a file name with hyphens (-). For example, a component named `UserProfile` has a file name `user-profile.ts`.
 
 ## Accessibility Requirements
 
@@ -92,3 +83,5 @@ You are an expert in TypeScript, Angular, and scalable web application developme
 - Design services around a single responsibility
 - Use the `providedIn: 'root'` option for singleton services
 - Use the `inject()` function instead of constructor injection
+- Services should be named with the `Service` suffix (e.g., `UserService`, `AuthService`).
+- To get data from APIs, the method should be named `fetch()`.
