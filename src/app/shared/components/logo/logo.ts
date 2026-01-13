@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './logo.css',
 })
 export class Logo {
-  readonly mode = input<'light' | 'dark'>('light');
+  public readonly mode = input<'light' | 'dark'>('light');
 }

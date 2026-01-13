@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Logo } from '@shared/components/logo/logo';
 
 @Component({
   selector: 'app-footer',
-  imports: [Logo],
+  imports: [Logo, RouterLink],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })
