@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { of } from 'rxjs';
+
+import { NetworkService } from '@infrastructure/api/network-service';
 
 import Home from './home';
 
@@ -8,7 +12,16 @@ describe('Home', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Home]
+      imports: [Home],
+      providers: [
+        provideRouter([]),
+        {
+          provide: NetworkService,
+          useValue: {
+            fetch: () => of([]),
+          },
+        },
+      ],
     })
     .compileComponents();
 

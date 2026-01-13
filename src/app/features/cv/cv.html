@@ -5,7 +5,9 @@
         <h1 class="text-3xl">Donovan Pardo</h1>
         <h2>
           <span>Colombia - </span>
-          <a href="https://www.linkedin.com/in/dpardox" class="text-blue-700 hover:underline">www.linkedin.com/in/dpardox</a>
+          <a [href]="linkedIn()?.link ?? ''" class="text-blue-700 hover:underline">
+            {{ linkedIn()?.user ?? '' }}
+          </a>
         </h2>
         <p class="mt-24">
           Hola, soy un Front-End Developer con mas de 12 anos de experiencia, con un fuerte enfoque en Angular.

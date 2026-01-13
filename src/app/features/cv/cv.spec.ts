@@ -1,4 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { of } from 'rxjs';
+
+import { NetworkService } from '@infrastructure/api/network-service';
 
 import CV from './cv';
 
@@ -8,7 +12,16 @@ describe('CV', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CV]
+      imports: [CV],
+      providers: [
+        provideRouter([]),
+        {
+          provide: NetworkService,
+          useValue: {
+            fetch: () => of([]),
+          },
+        },
+      ],
     })
     .compileComponents();
 
