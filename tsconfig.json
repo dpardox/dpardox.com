@@ -9,7 +9,6 @@
   },
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
     "experimentalDecorators": true,
     "importHelpers": true,
     "isolatedModules": true,
@@ -20,22 +19,22 @@
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
       "@core/*": [
-        "src/app/core/*"
+        "./src/app/core/*"
       ],
       "@features/*": [
-        "src/app/features/*"
+        "./src/app/features/*"
       ],
       "@infrastructure/*": [
-        "src/app/infrastructure/*"
+        "./src/app/infrastructure/*"
       ],
       "@layouts/*": [
-        "src/app/layouts/*"
+        "./src/app/layouts/*"
       ],
       "@ports/*": [
-        "src/app/core/ports/*"
+        "./src/app/core/ports/*"
       ],
       "@shared/*": [
-        "src/app/shared/*"
+        "./src/app/shared/*"
       ]
     },
     "skipLibCheck": true,
