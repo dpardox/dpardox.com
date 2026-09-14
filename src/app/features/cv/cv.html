@@ -1,131 +1,98 @@
 <app-web>
-  <div class="bg-gray-50 py-48 px-24">
-    <main class="container bg-white text-lg rounded-lg p-32">
-      <header>
-        <h1 class="text-3xl">Donovan Pardo</h1>
-        <h2>
-          <span>Colombia - </span>
-          <a [href]="linkedIn()?.link ?? ''" class="text-blue-700 hover:underline">
-            {{ linkedIn()?.user ?? '' }}
+  <div class="bg-slate-100 px-16 py-24 md:px-24 md:py-48 print:bg-white print:p-0">
+    <main class="container overflow-hidden border-t-6 border-blue-700 bg-white p-24 text-base leading-relaxed shadow-xl md:p-48 print:border-t-3 print:p-0 print:shadow-none">
+      <header class="max-w-780">
+        <p class="mb-8 text-xs font-bold tracking-widest text-blue-700 uppercase">Currículum profesional</p>
+        <h1 class="text-4xl leading-none font-bold tracking-tight md:text-5xl">Donovan Pardo</h1>
+        <p class="mt-8 text-xl font-semibold text-slate-600">Senior Angular Developer · Liderazgo técnico hands-on</p>
+        <nav aria-label="Datos de contacto" class="mt-16 flex min-h-44 flex-wrap items-center gap-x-24 gap-y-8">
+          <span>Colombia</span>
+          @if (linkedIn(); as linkedInNetwork) {
+            <a
+              [href]="linkedInNetwork.link"
+              class="text-blue-700 underline decoration-1 underline-offset-4 hover:decoration-2 focus-visible:rounded-sm focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-amber-500"
+            >
+              LinkedIn
+            </a>
+          }
+          <a
+            href="https://dpardox.dev"
+            class="text-blue-700 underline decoration-1 underline-offset-4 hover:decoration-2 focus-visible:rounded-sm focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-amber-500"
+          >
+            dpardox.dev
           </a>
-        </h2>
-        <p class="mt-24">
-          Hola, soy un Front-End Developer con mas de 12 anos de experiencia, con un fuerte enfoque en Angular.
-          Soy experto en migraciones de version y optimizacion de codigo, asegurando sistemas escalables, eficientes y mantenibles.
-          Participo activamente en equipos agiles usando metodologias Scrum, donde contribuyo a la evolucion del producto mediante refactorizacion, adopcion de buenas practicas y mejoras de UX.
+        </nav>
+        <p class="mt-16 max-w-780 text-lg">
+          Desarrollo software profesionalmente desde 2012, con Angular y TypeScript como especialidad principal.
+          Combino implementación directa, revisión de código y mentoría con diseño de arquitecturas frontend
+          mantenibles. Trabajo con RxJS, NgRx, microfrontends, migraciones y pruebas automatizadas, e incorporo
+          AI-assisted Spec-Driven Development con Kiro y OpenSpec.
         </p>
       </header>
 
-      <article class="mt-48">
-        <h3 class="font-bold text-xl">EXPERIENCIA PROFESIONAL</h3>
+      <section aria-labelledby="professional-experience-heading">
+        <h2 id="professional-experience-heading" class="mt-40 border-b-2 border-slate-200 pb-8 text-base font-bold tracking-widest uppercase">
+          Experiencia profesional
+        </h2>
 
-        <section class="my-24">
-          <header>
-            <h4 class="font-bold">Desarrollador Full-Stack - Ideagen Tritan</h4>
-            <p class="text-gray-600 italic"><time datetime="2022-05">Mayo 2022</time> - <time datetime="2025-03">Marzo 2025</time></p>
+        <article class="mt-24 break-inside-avoid">
+          <header class="gap-16 md:flex md:justify-between">
+            <div>
+              <h3 class="text-lg font-bold">Frontend Team Lead</h3>
+              <p class="text-slate-600">GlobalTask · Contrato remoto</p>
+            </div>
+            <p class="text-sm text-slate-600 md:text-right"><time datetime="2025-06">Junio de 2025</time> – Actualidad</p>
           </header>
-          <ul class="list-inside list-disc">
-            <li>
-              Desarrolle funcionalidades e implemente interfaces de usuario en <strong>SeaCare Commercial</strong> usando <strong>Angular</strong> (SCSS y Bootstrap),
-              <strong>PHP</strong> (Doctrine ORM), <strong>MongoDB</strong> y <strong>Docker</strong>, asegurando una experiencia de usuario fluida y efectiva.
-            </li>
-            <li>
-              Lidere la migracion a Angular 16, refactorizando codigo e implementando una arquitectura estandarizada,
-              mejorando la escalabilidad, la mantenibilidad y el desarrollo de nuevas funcionalidades.
-            </li>
-            <li>
-              Cree componentes reutilizables para optimizar flujos de trabajo y promovi buenas practicas para asegurar codigo sostenible y mejora continua.
-            </li>
-            <li>
-              Colabore en un entorno agil basado en Scrum junto al equipo para entregar resultados de alta calidad y asegurar la entrega continua del producto.
-            </li>
+          <ul class="mt-8 list-outside list-disc space-y-6 pl-20">
+            <li>Lidero la ingeniería frontend de aplicaciones empresariales de seguros y guío un equipo de 2 a 4 ingenieros.</li>
+            <li>Defino arquitecturas de referencia, estándares y requisitos no funcionales con Angular 18+, TypeScript, RxJS, Clean Architecture y arquitectura hexagonal.</li>
+            <li>Guío la implementación mediante revisión de código, mentoría, pruebas, flujos Git, Scrum y CI/CD.</li>
+            <li>Aplico AI-assisted Spec-Driven Development con Kiro y OpenSpec para convertir decisiones en entregables verificables.</li>
           </ul>
-        </section>
+        </article>
 
-        <section class="my-24">
-          <header>
-            <h4 class="font-bold">Desarrollador Front-End - Resolve Studio</h4>
-            <p class="text-gray-600 italic"><time datetime="2019-11">Noviembre 2019</time> - <time datetime="2021-07">Julio 2021</time></p>
+        <article class="mt-28 break-inside-avoid">
+          <header class="gap-16 md:flex md:justify-between">
+            <div><h3 class="text-lg font-bold">Full-Stack Developer</h3><p class="text-slate-600">Ideagen Tritan</p></div>
+            <p class="text-sm text-slate-600 md:text-right"><time datetime="2022-05">Mayo de 2022</time> – <time datetime="2025-03">Marzo de 2025</time></p>
           </header>
-          <ul class="list-inside list-disc">
-            <li>
-              Desarrolle la nueva version de <strong>Intelligence 2.0</strong>, una plataforma que mide el impacto de campanas ATL en activos digitales,
-              usando Angular y <strong>Redux (NGRX)</strong> para el manejo de estado global y <strong>GraphQL</strong> para la obtencion de datos.
-            </li>
-            <li>
-              Lidere la migracion de AngularJS a Angular 8+ con TypeScript, adaptando la API para soportar ambos proyectos simultaneamente mediante microfrontends,
-              asegurando una transicion tecnologica gradual y completando el 100% de la migracion.
-            </li>
-            <li>
-              Aplique metodologias de experiencia de usuario (UX) validadas mediante pruebas de usabilidad.
-            </li>
-            <li>
-              Disene y ejecute pruebas end-to-end (E2E) usando Playwright con TypeScript,
-              asegurando la calidad y estabilidad de la aplicacion web mediante casos de uso automatizados.
-            </li>
+          <ul class="mt-8 list-outside list-disc space-y-6 pl-20">
+            <li>Desarrollé interfaces y funcionalidades para SeaCare Commercial con Angular, SCSS, Bootstrap, PHP, MongoDB y Docker.</li>
+            <li>Lideré la migración a Angular 16 y una arquitectura estandarizada para mejorar mantenibilidad y escalabilidad.</li>
+            <li>Construí componentes reutilizables y trabajé en entrega continua con Scrum.</li>
           </ul>
-        </section>
+        </article>
 
-        <section class="my-24">
-          <header>
-            <h4 class="font-bold">Desarrollador Front-End - Universidad Nacional de Colombia</h4>
-            <p class="text-gray-600 italic"><time datetime="2017-11">Noviembre 2017</time> - <time datetime="2020-02">Febrero 2020</time></p>
+        <article class="mt-28 break-inside-avoid">
+          <header class="gap-16 md:flex md:justify-between">
+            <div><h3 class="text-lg font-bold">Front-End Developer</h3><p class="text-slate-600">Resolve Studio</p></div>
+            <p class="text-sm text-slate-600 md:text-right"><time datetime="2019-11">Noviembre de 2019</time> – <time datetime="2021-07">Julio de 2021</time></p>
           </header>
-          <ul class="list-inside list-disc">
-            <li>
-              Desarrolle sitios web usando <strong>Angular</strong> y aplicaciones moviles con <strong>Ionic</strong>,
-              integrando microservicios mediante <strong>APIs REST</strong> y <strong>GraphQL</strong>.
-            </li>
-            <li>
-              Construi interfaces de usuario optimizadas para mejorar la velocidad y la experiencia,
-              aprovechando <strong>HTML5</strong> y <strong>CSS3</strong> con <strong>SCSS</strong> para crear disenos responsivos y adaptativos.
-            </li>
+          <ul class="mt-8 list-outside list-disc space-y-6 pl-20">
+            <li>Desarrollé Intelligence 2.0 con Angular, NgRx y GraphQL.</li>
+            <li>Lideré la migración de AngularJS a Angular 8+ con TypeScript y microfrontends hasta completar la transición.</li>
+            <li>Diseñé pruebas E2E con Playwright y TypeScript.</li>
           </ul>
-        </section>
+        </article>
 
-        <section class="my-24">
-          <header>
-            <h4 class="font-bold">Desarrollador Full-Stack - 150 Por Ciento</h4>
-            <p class="text-gray-600 italic"><time datetime="2016-03">Marzo 2016</time> - <time datetime="2017-11">Noviembre 2017</time></p>
-          </header>
-          <ul class="list-inside list-disc">
-            <li>
-              Desarrolle la aplicacion movil <strong>LookApp</strong>, que conecta negocios con usuarios para investigacion de mercado.
-            </li>
-            <li>
-              Construi interfaces de usuario de alto rendimiento con <strong>HTML5</strong> y <strong>Angular</strong>,
-              con estilos en <strong>Bootstrap</strong> y colaborando con el equipo de diseno para asegurar calidad de <strong>UI/UX</strong>.
-            </li>
-            <li>
-              Integre <strong>APIs RESTful</strong> construidas con <strong>Laravel (PHP)</strong> y <strong>Node.js (Express)</strong>,
-              usando MySQL para la persistencia de datos e implementando autenticacion <strong>JWT</strong> para acceso seguro.
-            </li>
-            <li>
-              Trabaje de cerca con otros equipos de ingenieria y product owners para cumplir plazos.
-            </li>
-          </ul>
-        </section>
+        <div class="mt-28 grid gap-16 md:grid-cols-2">
+          <article><h3 class="font-bold">Front-End Developer</h3><p>Universidad Nacional de Colombia</p><p class="text-sm text-slate-600">2017–2020</p></article>
+          <article><h3 class="font-bold">Full-Stack Developer</h3><p>150 Por Ciento</p><p class="text-sm text-slate-600">2016–2017</p></article>
+          <article><h3 class="font-bold">Desarrollo de software</h3><p>Progracol · Big Pass Edenred · BRM</p><p class="text-sm text-slate-600">2012–2016</p></article>
+        </div>
+      </section>
 
-        <section class="my-24">
-          <header>
-            <h4 class="font-bold">Desarrollador Full-Stack - Progracol - Big Pass Edenred - BRM</h4>
-            <p class="text-gray-600 italic"><time datetime="2012-09">Septiembre 2012</time> - <time datetime="2016-03">Marzo 2016</time></p>
-          </header>
-        </section>
-
-        <h3 class="font-bold text-xl">EDUCACIÓN</h3>
-        <section class="mt-8 mb-24">
-          <header>
-            <h4>Tecnólogo en Análisis y Desarrollo de Sistemas de Información - SENA</h4>
-            <p><time datetime="2016">2016</time> - <time datetime="2018">2018</time></p>
-          </header>
-        </section>
-
-        <h3 class="font-bold text-xl">HABILIDADES</h3>
-        <section class="mt-8">
-          <p>Angular, TypeScript, Redux NGRX, RxJS, Sass SCSS, PHP, MongoDB, SQL, Docker, Git, Scrum, Playwright.</p>
-        </section>
-      </article>
+      <section class="mt-40 grid gap-32 md:grid-cols-2" aria-label="Formación y habilidades">
+        <div>
+          <h2 class="border-b-2 border-slate-200 pb-8 text-base font-bold tracking-widest uppercase">Formación</h2>
+          <h3 class="mt-12 font-bold">Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h3>
+          <p>SENA · 2016–2018</p>
+        </div>
+        <div>
+          <h2 class="border-b-2 border-slate-200 pb-8 text-base font-bold tracking-widest uppercase">Habilidades</h2>
+          <p class="mt-12">Angular · TypeScript · RxJS · NgRx · Playwright · Microfrontends · SCSS · Git · Scrum · CI/CD</p>
+        </div>
+      </section>
     </main>
   </div>
 </app-web>

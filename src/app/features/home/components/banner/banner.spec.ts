@@ -20,4 +20,9 @@ describe('Banner', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show the shared professional positioning', () => {
+    expect(fixture.nativeElement.textContent).toContain('Senior Angular Developer');
+    expect(fixture.nativeElement.textContent).toContain('AI-assisted Spec-Driven Development');
+  });
 });
