@@ -1,0 +1,157 @@
+<section id="actions" class="section light" aria-labelledby="actions-title">
+  <header class="section-header">
+    <p class="eyebrow">07 / ACTIONS</p>
+    <h2 id="actions-title">Make the<br>next move.</h2>
+    <p>Una acción primaria por contexto. Las alternativas acompañan sin disputar la señal.</p>
+  </header>
+
+  <div class="specimen-panel action-panel">
+    <article>
+      <p class="specimen-label">BUTTON / PRIMARY</p>
+      <div class="action-row">
+        <button class="button primary" type="button">Iniciar proyecto</button>
+        <button class="button primary simulated-hover" type="button">Estado hover</button>
+        <button class="button primary" type="button" disabled>Deshabilitado</button>
+      </div>
+    </article>
+    <article>
+      <p class="specimen-label">BUTTON / SECONDARY + LINK</p>
+      <div class="action-row">
+        <button class="button secondary" type="button">Ver detalles</button>
+        <a class="text-link" href="#actions" aria-label="Ejemplo de enlace que permanece en la sección de acciones">Explorar sistema</a>
+      </div>
+    </article>
+    <article class="dark-action">
+      <p class="specimen-label">ON DARK</p>
+      <div class="action-row">
+        <button class="button primary" type="button">Continuar</button>
+        <button class="button secondary inverse" type="button">Comparar</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="forms" class="section form-section" aria-labelledby="forms-title">
+  <header class="section-header inverse">
+    <p class="eyebrow">08 / FORMS</p>
+    <h2 id="forms-title">Input with<br>intent.</h2>
+    <p>Labels persistentes, estados explícitos y controles nativos que funcionan con teclado.</p>
+  </header>
+
+  <form class="form-specimen" aria-label="Muestra de controles del sistema" novalidate>
+    <div class="field">
+      <label for="style-guide-name">Nombre</label>
+      <input id="style-guide-name" type="text" placeholder="Escribe tu nombre" autocomplete="name">
+      <small>Usaremos este nombre para identificarte.</small>
+    </div>
+    <div class="field success-field">
+      <label for="style-guide-email">Correo verificado</label>
+      <input id="style-guide-email" type="email" value="hello@dpardox.dev" aria-describedby="email-success">
+      <small id="email-success">✓ Dirección disponible</small>
+    </div>
+    <div class="field error-field">
+      <label for="style-guide-role">Rol profesional</label>
+      <input id="style-guide-role" type="text" value="Dev" aria-invalid="true" aria-describedby="role-error">
+      <small id="role-error">Error: escribe un rol más específico.</small>
+    </div>
+    <div class="field">
+      <label for="style-guide-focus">Área de enfoque</label>
+      <select id="style-guide-focus">
+        <option>Frontend engineering</option>
+        <option>Design systems</option>
+        <option>Technical leadership</option>
+      </select>
+    </div>
+    <div class="field field-wide">
+      <label for="style-guide-message">Objetivo</label>
+      <textarea id="style-guide-message" rows="4" placeholder="Describe el resultado que quieres construir"></textarea>
+    </div>
+
+    <fieldset class="choice-group">
+      <legend>Preferencias de colaboración</legend>
+      <label><input type="checkbox" checked> Recibir avances clave</label>
+      <label><input type="checkbox"> Incluir revisión técnica</label>
+    </fieldset>
+    <fieldset class="choice-group">
+      <legend>Ritmo del proyecto</legend>
+      <label><input type="radio" name="pace" checked> Iterativo</label>
+      <label><input type="radio" name="pace"> Intensivo</label>
+    </fieldset>
+    <div class="switch-group">
+      <span id="availability-label">Disponible para conversar</span>
+      <label class="switch">
+        <input type="checkbox" role="switch" checked aria-labelledby="availability-label">
+        <span aria-hidden="true"></span>
+      </label>
+    </div>
+  </form>
+</section>
+
+<section id="content" class="section light" aria-labelledby="content-title">
+  <header class="section-header">
+    <p class="eyebrow">09 / CONTENT</p>
+    <h2 id="content-title">Structured<br>to scan.</h2>
+    <p>Cards, badges y placas técnicas convierten información densa en decisiones rápidas.</p>
+  </header>
+
+  <div class="card-grid">
+    <article class="content-card featured-card">
+      <div class="card-meta"><span>CASE / 01</span><span class="badge blue">ACTIVE</span></div>
+      <h3>Angular architecture</h3>
+      <p>Sistemas frontend mantenibles con decisiones explícitas y una entrega verificable.</p>
+      <div class="metric"><strong>22</strong><span>Framework<br>version</span></div>
+    </article>
+    <article class="content-card dark-card">
+      <div class="card-meta"><span>STATUS / LIVE</span><span class="badge cyan">READY</span></div>
+      <h3>Technical leadership</h3>
+      <p>Dirección clara, implementación hands-on y mejora continua del equipo.</p>
+      <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i></div>
+    </article>
+    <article class="content-card plate-card">
+      <div class="card-meta"><span>PROFILE / DP</span><span class="badge red">PRIORITY</span></div>
+      <div class="profile-number">12+</div>
+      <h3>Años construyendo software</h3>
+      <p>Experiencia profesional convertida en criterio técnico.</p>
+    </article>
+  </div>
+</section>
+
+<section id="data-feedback" class="section data-section" aria-labelledby="data-feedback-title">
+  <header class="section-header inverse">
+    <p class="eyebrow">10 / DATA + FEEDBACK</p>
+    <h2 id="data-feedback-title">Status at<br>a glance.</h2>
+    <p>Mensajes, tablas y progreso con información explícita y movimiento contenido.</p>
+  </header>
+
+  <div class="feedback-grid">
+    <div class="alerts">
+      <article class="alert info"><span aria-hidden="true">i</span><div><h3>Información</h3><p>El sistema está listo para la siguiente etapa.</p></div></article>
+      <article class="alert success"><span aria-hidden="true">✓</span><div><h3>Completado</h3><p>Todos los controles superaron la validación.</p></div></article>
+      <article class="alert error"><span aria-hidden="true">!</span><div><h3>Requiere atención</h3><p>Revisa los campos indicados antes de continuar.</p></div></article>
+      <div class="toast" role="status"><span aria-hidden="true">✓</span><p><b>Cambios guardados</b><br>La actualización quedó registrada.</p></div>
+    </div>
+
+    <article class="progress-card">
+      <p class="specimen-label">SYSTEM PROGRESS</p>
+      <div class="progress-value"><strong>88</strong><span>%</span></div>
+      <div class="progress-track" role="progressbar" aria-label="Progreso del sistema" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><i></i></div>
+      <div class="progress-meta"><span>VALIDATING</span><span>04 / 05</span></div>
+      <div class="loaders" aria-label="Ejemplos de carga">
+        <span class="spinner" aria-label="Cargando"></span>
+        <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div>
+      </div>
+    </article>
+  </div>
+
+  <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabla de métricas, deslizable horizontalmente en pantallas pequeñas">
+    <table>
+      <caption>Rendimiento del sistema</caption>
+      <thead><tr><th scope="col">Módulo</th><th scope="col">Estado</th><th scope="col">Cobertura</th><th scope="col">Última ejecución</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Core interface</th><td><span class="status-dot ready">Ready</span></td><td>96%</td><td>14:32:08</td></tr>
+        <tr><th scope="row">Design tokens</th><td><span class="status-dot ready">Ready</span></td><td>100%</td><td>14:31:44</td></tr>
+        <tr><th scope="row">Motion layer</th><td><span class="status-dot review">Review</span></td><td>72%</td><td>14:28:17</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>

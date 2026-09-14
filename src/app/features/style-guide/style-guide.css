@@ -1,0 +1,18 @@
+:host {
+  display: block;
+  min-width: 0;
+  color: var(--color-dpardo-white);
+  background: var(--color-dpardo-ink);
+  font-family: var(--font-dpardo-body);
+}
+
+.style-guide-shell {
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :host {
+    scroll-behavior: auto;
+  }
+}

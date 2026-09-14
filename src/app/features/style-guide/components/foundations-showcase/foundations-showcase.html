@@ -1,0 +1,106 @@
+<section id="color" class="section color-section" aria-labelledby="color-title">
+  <header class="section-header">
+    <p class="eyebrow">03 / FOUNDATIONS</p>
+    <h2 id="color-title">Color under<br>control.</h2>
+    <p>El color no decora: organiza, identifica y señala. La energía aparece donde importa.</p>
+  </header>
+
+  <div class="palette" aria-label="Paleta de color dpardo">
+    <article class="swatch swatch-ink">
+      <span>INK / BASE</span><strong>#070A0F</strong><small>Structure · 32%</small>
+    </article>
+    <article class="swatch swatch-navy">
+      <span>NAVY / BASE</span><strong>#0B2A5B</strong><small>Depth · 23%</small>
+    </article>
+    <article class="swatch swatch-white">
+      <span>WHITE / BASE</span><strong>#FFFFFF</strong><small>Space · 18%</small>
+    </article>
+    <article class="swatch swatch-smoke">
+      <span>SMOKE / BASE</span><strong>#F3F6FA</strong><small>Surface · 7%</small>
+    </article>
+    <article class="swatch swatch-blue">
+      <span>RACE BLUE / BASE</span><strong>#0E63F4</strong><small>Identity · 12%</small>
+    </article>
+    <article class="swatch swatch-red">
+      <span>RACE RED / BASE</span><strong>#D90429</strong><small>Action · 8%</small>
+    </article>
+    <article class="swatch swatch-cyan">
+      <span>SIGNAL CYAN / CANDIDATE</span><strong>#00A6D6</strong><small>Telemetry</small>
+    </article>
+    <article class="swatch swatch-steel">
+      <span>STEEL / BASE</span><strong>#8D98A7</strong><small>Secondary</small>
+    </article>
+  </div>
+
+  <div class="color-rules">
+    <article><span>55</span><p>Ink + navy<br><b>Estructura</b></p></article>
+    <article><span>25</span><p>White + smoke<br><b>Espacio</b></p></article>
+    <article><span>12</span><p>Blue + cyan<br><b>Identidad</b></p></article>
+    <article><span>08</span><p>Race red<br><b>Señal</b></p></article>
+  </div>
+</section>
+
+<section id="typography" class="section typography-section" aria-labelledby="typography-title">
+  <header class="section-header inverse">
+    <p class="eyebrow">04 / TYPOGRAPHY</p>
+    <h2 id="typography-title">Clear at<br>any speed.</h2>
+    <p>Una voz condensada para competir por atención. Una voz abierta para sostener la lectura.</p>
+  </header>
+
+  <div class="type-specimens">
+    <article class="type-display">
+      <div class="type-meta"><span>DISPLAY</span><span>BARLOW CONDENSED / 800</span></div>
+      <p class="giant-type">Aa</p>
+      <p class="type-alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>0123456789</p>
+    </article>
+
+    <article class="type-body">
+      <div class="type-meta"><span>BODY</span><span>OPEN SANS / 400—700</span></div>
+      <p class="body-example">
+        Diseñamos sistemas que convierten complejidad en progreso. La precisión técnica sostiene
+        cada decisión y la velocidad nunca sacrifica claridad.
+      </p>
+      <div class="weights"><span>Regular 400</span><b>Semibold 600</b><strong>Bold 700</strong></div>
+    </article>
+  </div>
+
+  <div class="type-scale">
+    <article><small>DISPLAY 01</small><p class="scale-display">Fast by design.</p></article>
+    <article><small>HEADING 01</small><p class="scale-heading">Performance with purpose.</p></article>
+    <article><small>BODY LEAD</small><p class="scale-lead">Ingeniería clara para productos que avanzan.</p></article>
+    <article><small>OVERLINE</small><p class="scale-overline">SYSTEM / STATUS / READY</p></article>
+  </div>
+</section>
+
+<section id="layout" class="section layout-section" aria-labelledby="layout-title">
+  <header class="section-header">
+    <p class="eyebrow">05 / LAYOUT</p>
+    <h2 id="layout-title">Aligned for<br>performance.</h2>
+    <p>Una base de 4px, ritmo de 8px y retículas que mantienen cada elemento bajo control.</p>
+  </header>
+
+  <div class="grid-demo" aria-label="Retícula responsive de doce columnas">
+    @for (column of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; track column) {
+      <div><span>{{ column }}</span></div>
+    }
+  </div>
+
+  <div class="layout-tokens">
+    <article>
+      <p class="token-title">SPACING</p>
+      <div class="spacing-row"><span>04</span><i class="space-04"></i></div>
+      <div class="spacing-row"><span>08</span><i class="space-08"></i></div>
+      <div class="spacing-row"><span>16</span><i class="space-16"></i></div>
+      <div class="spacing-row"><span>32</span><i class="space-32"></i></div>
+      <div class="spacing-row"><span>64</span><i class="space-64"></i></div>
+    </article>
+    <article>
+      <p class="token-title">RADII</p>
+      <div class="radii-row"><span class="radius-none">0</span><span class="radius-control">4</span><span class="radius-card">8</span></div>
+    </article>
+    <article>
+      <p class="token-title">ELEVATION</p>
+      <div class="elevation-card"><span>01</span><p>Border first.<br>Shadow second.</p></div>
+    </article>
+  </div>
+</section>

@@ -10,8 +10,12 @@ export const routes: Routes = [
     loadComponent: () => import('@features/cv/cv'),
   },
   {
+    path: 'style-guide',
+    loadComponent: () => import('@features/style-guide/style-guide'),
+  },
+  {
     path: '**',
     redirectTo: '',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
