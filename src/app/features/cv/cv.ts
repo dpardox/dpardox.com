@@ -1,15 +1,27 @@
-import { Component, inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { NetworksService } from '@core/services/networks-service';
+import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { Web } from '@layouts/web/web';
+
+import { CvLinks } from './enums/cv-links';
+import { CvDocumentMetadataService } from './services/cv-document-metadata';
 
 @Component({
   selector: 'app-cv',
   imports: [Web],
   templateUrl: './cv.html',
   styleUrl: './cv.css',
+  providers: [CvDocumentMetadataService],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class CV {
-  private readonly networksService = inject(NetworksService);
-  public readonly linkedIn = toSignal(this.networksService.getLinkedIn());
+export default class CV implements OnInit, OnDestroy {
+  private readonly documentMetadata = inject(CvDocumentMetadataService);
+  public readonly linkedInLink = CvLinks.LinkedIn;
+  public readonly websiteLink = CvLinks.Website;
+
+  public ngOnInit(): void {
+    this.documentMetadata.apply();
+  }
+
+  public ngOnDestroy(): void {
+    this.documentMetadata.restore();
+  }
 }

@@ -17,6 +17,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
+    "resolveJsonModule": true,
     "paths": {
       "@core/*": [
         "./src/app/core/*"

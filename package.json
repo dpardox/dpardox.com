@@ -9,6 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:ci": "ng test --watch=false",
+    "verify:static-cv": "node scripts/verify-static-cv.mjs",
     "lint": "ng lint",
     "lint:fix": "eslint \"src\" --ext .ts,.html --fix",
     "prepare": "husky"
@@ -33,7 +34,9 @@
     "@angular/core": "^22.1.3",
     "@angular/forms": "^22.1.3",
     "@angular/platform-browser": "^22.1.3",
+    "@angular/platform-server": "^22.1.3",
     "@angular/router": "^22.1.3",
+    "@angular/ssr": "^22.1.5",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
