@@ -1,59 +1,151 @@
-<section id="accessibility" class="section" aria-labelledby="accessibility-title">
-  <header class="section-header">
-    <p class="eyebrow">11 / ACCESSIBILITY + MOTION</p>
-    <h2 id="accessibility-title">Fast.<br>Never rushed.</h2>
-    <p>El sistema se mueve para orientar y se detiene cuando la persona lo necesita.</p>
+<section
+  id="accessibility"
+  class="bg-white px-[clamp(24px,5vw,72px)] py-[clamp(72px,10vw,144px)] pb-48 text-dpardo-ink"
+  aria-labelledby="accessibility-title"
+>
+  <header
+    class="mx-auto mb-64 grid max-w-[1280px] grid-cols-[0.45fr_1fr_0.75fr] items-end gap-32 max-md:grid-cols-1 max-md:gap-20"
+  >
+    <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+      11 / Accessibility + motion
+    </p>
+    <h2
+      id="accessibility-title"
+      class="font-[var(--font-dpardo-display)] text-[clamp(52px,8vw,104px)] leading-[0.84] font-extrabold tracking-[-0.035em] uppercase"
+    >
+      Rápido.<br />Nunca apresurado.
+    </h2>
+    <p class="max-w-[470px] text-[17px] leading-[1.7] text-[#4c5664]">
+      El movimiento orienta una vez. La información, el foco y los estados permanecen disponibles
+      sin él.
+    </p>
   </header>
 
-  <div class="motion-grid">
-    <article>
-      <p class="specimen-label">MICRO / 120MS</p>
-      <div class="motion-demo micro-demo" aria-hidden="true"><span></span></div>
-      <p>Respuesta inmediata para hover, press y selección.</p>
+  <div class="mx-auto grid max-w-[1280px] grid-cols-3 gap-16 max-md:grid-cols-1">
+    <article class="border border-[#d4dae2] bg-dpardo-smoke p-28">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+        MICRO / 120MS
+      </p>
+      <div class="motion-track my-24 h-160 overflow-hidden bg-dpardo-ink" aria-hidden="true">
+        <span class="motion-dot motion-dot-micro bg-dpardo-race-red"></span>
+      </div>
+      <p class="text-[13px] leading-[1.55] text-[#56616e]">
+        Respuesta inmediata para hover, press y selección.
+      </p>
     </article>
-    <article>
-      <p class="specimen-label">COMPONENT / 200MS</p>
-      <div class="motion-demo component-demo" aria-hidden="true"><span></span></div>
-      <p>Transición breve entre estados del mismo componente.</p>
+    <article class="border border-[#d4dae2] bg-dpardo-smoke p-28">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+        COMPONENT / 200MS
+      </p>
+      <div class="motion-track my-24 h-160 overflow-hidden bg-dpardo-ink" aria-hidden="true">
+        <span class="motion-dot motion-dot-component bg-dpardo-race-blue"></span>
+      </div>
+      <p class="text-[13px] leading-[1.55] text-[#56616e]">
+        Transición breve entre estados del mismo componente.
+      </p>
     </article>
-    <article>
-      <p class="specimen-label">EDITORIAL / 320MS</p>
-      <div class="motion-demo editorial-demo" aria-hidden="true"><span></span></div>
-      <p>Entrada única de bloques; nunca en loop continuo.</p>
+    <article class="border border-[#d4dae2] bg-dpardo-smoke p-28">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+        EDITORIAL / 320MS
+      </p>
+      <div class="motion-track my-24 h-160 overflow-hidden bg-dpardo-ink" aria-hidden="true">
+        <span class="motion-dot motion-dot-editorial bg-dpardo-signal-cyan"></span>
+      </div>
+      <p class="text-[13px] leading-[1.55] text-[#56616e]">
+        Entrada única de bloques; nunca un loop continuo en producción.
+      </p>
     </article>
   </div>
 
-  <div class="principle-grid">
-    <article class="do-card">
-      <header><span aria-hidden="true">✓</span><h3>Do</h3></header>
-      <ul>
-        <li>Usar contraste y texto para explicar estados.</li>
-        <li>Mantener foco visible con espacio exterior.</li>
-        <li>Reducir decoración antes que contenido.</li>
-        <li>Respetar las preferencias de movimiento.</li>
+  <div class="mx-auto mt-64 grid max-w-[1280px] grid-cols-2 gap-16 max-md:grid-cols-1">
+    <article class="min-h-340 bg-dpardo-navy p-40 text-white">
+      <header class="flex items-center gap-16">
+        <span
+          class="grid size-42 place-items-center rounded-full border-2 border-dpardo-signal-cyan text-[24px] text-dpardo-signal-cyan"
+          aria-hidden="true"
+          >✓</span
+        >
+        <h3 class="font-[var(--font-dpardo-display)] text-[44px] font-bold uppercase">Do</h3>
+      </header>
+      <ul class="mt-40 space-y-18 leading-[1.55]">
+        <li class="border-l-2 border-dpardo-signal-cyan pl-20">
+          Usar texto e icono para explicar estados.
+        </li>
+        <li class="border-l-2 border-dpardo-signal-cyan pl-20">
+          Mantener foco visible con espacio exterior.
+        </li>
+        <li class="border-l-2 border-dpardo-signal-cyan pl-20">
+          Reducir decoración antes que contenido.
+        </li>
+        <li class="border-l-2 border-dpardo-signal-cyan pl-20">
+          Dejar el spectrum trail estático con reduced motion.
+        </li>
       </ul>
     </article>
-    <article class="dont-card">
-      <header><span aria-hidden="true">×</span><h3>Don't</h3></header>
-      <ul>
-        <li>Depender solo del rojo para comunicar error.</li>
-        <li>Recortar foco con diagonales o clip paths.</li>
-        <li>Usar microtramas detrás de texto extenso.</li>
-        <li>Copiar logos, mascotas, circuitos o liveries.</li>
+    <article class="min-h-340 border border-[#d4dae2] bg-dpardo-smoke p-40">
+      <header class="flex items-center gap-16">
+        <span
+          class="grid size-42 place-items-center rounded-full border-2 border-dpardo-race-red text-[24px] text-dpardo-race-red"
+          aria-hidden="true"
+          >×</span
+        >
+        <h3 class="font-[var(--font-dpardo-display)] text-[44px] font-bold uppercase">Don't</h3>
+      </header>
+      <ul class="mt-40 space-y-18 leading-[1.55]">
+        <li class="border-l-2 border-dpardo-race-red pl-20">
+          Depender solo del rojo para comunicar error.
+        </li>
+        <li class="border-l-2 border-dpardo-race-red pl-20">
+          Recortar foco con diagonales o clip paths.
+        </li>
+        <li class="border-l-2 border-dpardo-race-red pl-20">Combinar varias firmas dominantes.</li>
+        <li class="border-l-2 border-dpardo-race-red pl-20">
+          Copiar halos, logos, circuitos o liveries.
+        </li>
       </ul>
     </article>
   </div>
 
-  <div class="contrast-strip" aria-label="Combinaciones principales de alto contraste">
-    <span class="contrast-white">WHITE / INK</span>
-    <span class="contrast-cyan">INK / CYAN</span>
-    <span class="contrast-blue">WHITE / BLUE</span>
-    <span class="contrast-red">WHITE / RED</span>
+  <div
+    class="mx-auto mt-16 grid max-w-[1280px] grid-cols-4 max-md:grid-cols-2"
+    aria-label="Combinaciones principales de alto contraste"
+  >
+    <span
+      class="grid min-h-100 content-end bg-dpardo-ink p-18 text-[10px] font-bold tracking-[0.14em] text-white"
+      >WHITE / INK</span
+    ><span
+      class="grid min-h-100 content-end bg-dpardo-signal-cyan p-18 text-[10px] font-bold tracking-[0.14em]"
+      >INK / CYAN</span
+    ><span
+      class="grid min-h-100 content-end bg-dpardo-race-blue p-18 text-[10px] font-bold tracking-[0.14em] text-white"
+      >WHITE / BLUE</span
+    ><span
+      class="grid min-h-100 content-end bg-dpardo-race-red p-18 text-[10px] font-bold tracking-[0.14em] text-white"
+      >WHITE / RED</span
+    >
   </div>
 
-  <footer class="closing">
-    <div class="closing-bars" aria-hidden="true"><i></i><i></i><i></i></div>
-    <p class="closing-wordmark" aria-label="dpardox">dpardox<span>.</span></p>
-    <p>VISUAL SYSTEM / V1.0<br>BUILT TO MOVE WITH PURPOSE.</p>
+  <footer
+    class="relative mx-auto mt-128 flex min-h-340 max-w-[1280px] items-end justify-between overflow-hidden bg-dpardo-ink p-48 text-white max-md:flex-col max-md:items-start max-md:justify-end max-md:p-28"
+  >
+    <div
+      class="absolute top-28 right-[-8%] w-[65%] [transform:skewX(-22deg)] motion-reduce:transform-none"
+      aria-hidden="true"
+    >
+      <i class="m-12 block h-18 bg-dpardo-race-red"></i
+      ><i class="m-12 block h-18 bg-dpardo-race-blue"></i
+      ><i class="m-12 ml-auto block h-18 w-[52%] bg-dpardo-signal-cyan"></i>
+    </div>
+    <p
+      class="relative z-10 text-[clamp(52px,9vw,118px)] font-bold tracking-[-0.07em]"
+      aria-label="dpardox"
+    >
+      dpardox<span class="text-dpardo-race-red">.</span>
+    </p>
+    <p
+      class="relative z-10 font-[var(--font-dpardo-display)] text-[12px] font-bold tracking-[0.14em] max-md:mt-24"
+    >
+      VISUAL SYSTEM / V1.1<br />PERFORMANCE WITH CLARITY.
+    </p>
   </footer>
 </section>

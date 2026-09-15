@@ -6,11 +6,6 @@
   font-family: var(--font-dpardo-body);
 }
 
-.style-guide-shell {
-  min-width: 0;
-  overflow: hidden;
-}
-
 @media (prefers-reduced-motion: reduce) {
   :host {
     scroll-behavior: auto;

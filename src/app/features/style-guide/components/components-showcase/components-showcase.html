@@ -1,156 +1,441 @@
-<section id="actions" class="section light" aria-labelledby="actions-title">
-  <header class="section-header">
-    <p class="eyebrow">07 / ACTIONS</p>
-    <h2 id="actions-title">Make the<br>next move.</h2>
-    <p>Una acción primaria por contexto. Las alternativas acompañan sin disputar la señal.</p>
+<section
+  id="actions"
+  class="bg-dpardo-smoke px-[clamp(24px,5vw,72px)] py-[clamp(72px,10vw,144px)] text-dpardo-ink"
+  aria-labelledby="actions-title"
+>
+  <header
+    class="mx-auto mb-64 grid max-w-[1280px] grid-cols-[0.45fr_1fr_0.75fr] items-end gap-32 max-md:grid-cols-1 max-md:gap-20"
+  >
+    <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+      07 / Actions
+    </p>
+    <h2
+      id="actions-title"
+      class="font-[var(--font-dpardo-display)] text-[clamp(52px,8vw,104px)] leading-[0.84] font-extrabold tracking-[-0.035em] uppercase"
+    >
+      Directas.<br />Sin ruido.
+    </h2>
+    <p class="max-w-[470px] text-[17px] leading-[1.7] text-[#4c5664]">
+      Una acción primaria por contexto. El entorno puede acelerar; el control permanece estable y
+      profesional.
+    </p>
   </header>
 
-  <div class="specimen-panel action-panel">
-    <article>
-      <p class="specimen-label">BUTTON / PRIMARY</p>
-      <div class="action-row">
-        <button class="button primary" type="button">Iniciar proyecto</button>
-        <button class="button primary simulated-hover" type="button">Estado hover</button>
-        <button class="button primary" type="button" disabled>Deshabilitado</button>
+  <div class="mx-auto max-w-[1280px] border border-[#cdd3dc] bg-white">
+    <article class="border-b border-[#d8dde4] p-40 max-md:p-24">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+        BUTTON / PRIMARY
+      </p>
+      <div class="mt-28 flex flex-wrap items-center gap-16 max-md:flex-col max-md:items-stretch">
+        <button
+          class="min-h-48 border-2 border-transparent bg-dpardo-race-red px-22 text-[13px] font-bold text-white transition-transform duration-[120ms] hover:-translate-y-2 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue active:translate-y-0 motion-reduce:transform-none motion-reduce:transition-none"
+          type="button"
+        >
+          Iniciar proyecto</button
+        ><button
+          class="min-h-48 border-2 border-transparent bg-dpardo-race-red px-22 text-[13px] font-bold text-white -translate-y-2 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue motion-reduce:transform-none"
+          type="button"
+        >
+          Estado hover</button
+        ><button
+          class="min-h-48 border-2 border-transparent bg-[#d8dde4] px-22 text-[13px] font-bold text-[#687381]"
+          type="button"
+          disabled
+        >
+          Deshabilitado
+        </button>
       </div>
     </article>
-    <article>
-      <p class="specimen-label">BUTTON / SECONDARY + LINK</p>
-      <div class="action-row">
-        <button class="button secondary" type="button">Ver detalles</button>
-        <a class="text-link" href="#actions" aria-label="Ejemplo de enlace que permanece en la sección de acciones">Explorar sistema</a>
+    <article class="border-b border-[#d8dde4] p-40 max-md:p-24">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+        BUTTON / SECONDARY + LINK
+      </p>
+      <div class="mt-28 flex flex-wrap items-center gap-16 max-md:flex-col max-md:items-stretch">
+        <button
+          class="min-h-48 border-2 border-dpardo-race-blue bg-transparent px-22 text-[13px] font-bold text-dpardo-race-blue focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+          type="button"
+        >
+          Ver detalles</button
+        ><a
+          class="inline-flex min-h-44 items-center font-bold text-dpardo-race-blue underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+          href="#actions"
+          >Explorar sistema</a
+        >
       </div>
     </article>
-    <article class="dark-action">
-      <p class="specimen-label">ON DARK</p>
-      <div class="action-row">
-        <button class="button primary" type="button">Continuar</button>
-        <button class="button secondary inverse" type="button">Comparar</button>
+    <article class="bg-dpardo-ink p-40 text-white max-md:p-24">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-signal-cyan uppercase">
+        ON DARK
+      </p>
+      <div class="mt-28 flex flex-wrap items-center gap-16 max-md:flex-col max-md:items-stretch">
+        <button
+          class="min-h-48 bg-dpardo-race-red px-22 text-[13px] font-bold focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-signal-cyan"
+          type="button"
+        >
+          Continuar</button
+        ><button
+          class="min-h-48 border-2 border-white bg-transparent px-22 text-[13px] font-bold focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-signal-cyan"
+          type="button"
+        >
+          Comparar
+        </button>
       </div>
     </article>
   </div>
 </section>
 
-<section id="forms" class="section form-section" aria-labelledby="forms-title">
-  <header class="section-header inverse">
-    <p class="eyebrow">08 / FORMS</p>
-    <h2 id="forms-title">Input with<br>intent.</h2>
-    <p>Labels persistentes, estados explícitos y controles nativos que funcionan con teclado.</p>
+<section
+  id="forms"
+  class="bg-dpardo-navy px-[clamp(24px,5vw,72px)] py-[clamp(72px,10vw,144px)]"
+  aria-labelledby="forms-title"
+>
+  <header
+    class="mx-auto mb-64 grid max-w-[1280px] grid-cols-[0.45fr_1fr_0.75fr] items-end gap-32 max-md:grid-cols-1 max-md:gap-20"
+  >
+    <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-signal-cyan uppercase">
+      08 / Forms
+    </p>
+    <h2
+      id="forms-title"
+      class="font-[var(--font-dpardo-display)] text-[clamp(52px,8vw,104px)] leading-[0.84] font-extrabold tracking-[-0.035em] uppercase"
+    >
+      Input con<br />intención.
+    </h2>
+    <p class="max-w-[470px] text-[17px] leading-[1.7] text-[#c1c9d4]">
+      La identidad rodea al formulario. Dentro, labels, controles y estados se mantienen limpios.
+    </p>
   </header>
 
-  <form class="form-specimen" aria-label="Muestra de controles del sistema" novalidate>
-    <div class="field">
-      <label for="style-guide-name">Nombre</label>
-      <input id="style-guide-name" type="text" placeholder="Escribe tu nombre" autocomplete="name">
-      <small>Usaremos este nombre para identificarte.</small>
+  <form
+    class="mx-auto grid max-w-[1100px] grid-cols-2 gap-32 rounded-[8px] bg-white p-[clamp(24px,5vw,64px)] text-dpardo-ink shadow-dpardo-soft max-md:grid-cols-1"
+    aria-label="Muestra de controles del sistema"
+    novalidate
+  >
+    <div class="flex flex-col gap-8">
+      <label class="text-[13px] font-bold" for="style-guide-name">Nombre</label
+      ><input
+        class="min-h-48 w-full rounded-[4px] border border-dpardo-steel bg-white px-14 py-12 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        id="style-guide-name"
+        type="text"
+        placeholder="Escribe tu nombre"
+        autocomplete="name"
+        aria-describedby="name-help"
+      /><small id="name-help" class="text-[12px] text-[#5b6674]"
+        >Usaremos este nombre para identificarte.</small
+      >
     </div>
-    <div class="field success-field">
-      <label for="style-guide-email">Correo verificado</label>
-      <input id="style-guide-email" type="email" value="hello@dpardox.dev" aria-describedby="email-success">
-      <small id="email-success">✓ Dirección disponible</small>
+    <div class="flex flex-col gap-8">
+      <label class="text-[13px] font-bold" for="style-guide-email">Correo verificado</label
+      ><input
+        class="min-h-48 w-full rounded-[4px] border border-[#16733d] bg-white px-14 py-12 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        id="style-guide-email"
+        type="email"
+        value="hello@dpardox.dev"
+        aria-describedby="email-success"
+      /><small id="email-success" class="text-[12px] text-[#126132]">✓ Dirección disponible</small>
     </div>
-    <div class="field error-field">
-      <label for="style-guide-role">Rol profesional</label>
-      <input id="style-guide-role" type="text" value="Dev" aria-invalid="true" aria-describedby="role-error">
-      <small id="role-error">Error: escribe un rol más específico.</small>
+    <div class="flex flex-col gap-8">
+      <label class="text-[13px] font-bold" for="style-guide-role">Rol profesional</label
+      ><input
+        class="min-h-48 w-full rounded-[4px] border-2 border-dpardo-race-red bg-white px-14 py-12 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        id="style-guide-role"
+        type="text"
+        value="Dev"
+        aria-invalid="true"
+        aria-describedby="role-error"
+      /><small id="role-error" class="text-[12px] font-bold text-[#b00020]"
+        >Error: escribe un rol más específico.</small
+      >
     </div>
-    <div class="field">
-      <label for="style-guide-focus">Área de enfoque</label>
-      <select id="style-guide-focus">
+    <div class="flex flex-col gap-8">
+      <label class="text-[13px] font-bold" for="style-guide-focus">Área de enfoque</label
+      ><select
+        class="min-h-48 w-full rounded-[4px] border border-dpardo-steel bg-white px-14 py-12 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        id="style-guide-focus"
+      >
         <option>Frontend engineering</option>
         <option>Design systems</option>
         <option>Technical leadership</option>
       </select>
     </div>
-    <div class="field field-wide">
-      <label for="style-guide-message">Objetivo</label>
-      <textarea id="style-guide-message" rows="4" placeholder="Describe el resultado que quieres construir"></textarea>
+    <div class="col-span-full flex flex-col gap-8">
+      <label class="text-[13px] font-bold" for="style-guide-message">Objetivo</label
+      ><textarea
+        class="min-h-112 w-full resize-y rounded-[4px] border border-dpardo-steel bg-white px-14 py-12 focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        id="style-guide-message"
+        rows="4"
+        placeholder="Describe el resultado que quieres construir"
+      ></textarea>
     </div>
 
-    <fieldset class="choice-group">
-      <legend>Preferencias de colaboración</legend>
-      <label><input type="checkbox" checked> Recibir avances clave</label>
-      <label><input type="checkbox"> Incluir revisión técnica</label>
+    <fieldset class="flex flex-col gap-12 border-0 p-0">
+      <legend class="mb-14 text-[13px] font-bold">Preferencias de colaboración</legend>
+      <label class="flex min-h-44 items-center gap-10 text-[14px]"
+        ><input class="size-20 accent-dpardo-race-blue" type="checkbox" checked /> Recibir avances
+        clave</label
+      ><label class="flex min-h-44 items-center gap-10 text-[14px]"
+        ><input class="size-20 accent-dpardo-race-blue" type="checkbox" /> Incluir revisión
+        técnica</label
+      >
     </fieldset>
-    <fieldset class="choice-group">
-      <legend>Ritmo del proyecto</legend>
-      <label><input type="radio" name="pace" checked> Iterativo</label>
-      <label><input type="radio" name="pace"> Intensivo</label>
+    <fieldset class="flex flex-col gap-12 border-0 p-0">
+      <legend class="mb-14 text-[13px] font-bold">Ritmo del proyecto</legend>
+      <label class="flex min-h-44 items-center gap-10 text-[14px]"
+        ><input class="size-20 accent-dpardo-race-blue" type="radio" name="pace" checked />
+        Iterativo</label
+      ><label class="flex min-h-44 items-center gap-10 text-[14px]"
+        ><input class="size-20 accent-dpardo-race-blue" type="radio" name="pace" /> Intensivo</label
+      >
     </fieldset>
-    <div class="switch-group">
-      <span id="availability-label">Disponible para conversar</span>
-      <label class="switch">
-        <input type="checkbox" role="switch" checked aria-labelledby="availability-label">
-        <span aria-hidden="true"></span>
-      </label>
-    </div>
+    <label
+      class="col-span-full flex min-h-56 items-center justify-between border border-[#d8dde4] px-16 py-12 text-[14px] font-bold"
+    >
+      <span id="availability-label">Disponible para conversar</span
+      ><input
+        class="switch-control relative h-26 w-48 cursor-pointer appearance-none rounded-full bg-dpardo-steel transition-colors checked:bg-dpardo-race-blue focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue"
+        type="checkbox"
+        role="switch"
+        checked
+        aria-labelledby="availability-label"
+      />
+    </label>
   </form>
 </section>
 
-<section id="content" class="section light" aria-labelledby="content-title">
-  <header class="section-header">
-    <p class="eyebrow">09 / CONTENT</p>
-    <h2 id="content-title">Structured<br>to scan.</h2>
-    <p>Cards, badges y placas técnicas convierten información densa en decisiones rápidas.</p>
+<section
+  id="content"
+  class="bg-dpardo-smoke px-[clamp(24px,5vw,72px)] py-[clamp(72px,10vw,144px)] text-dpardo-ink"
+  aria-labelledby="content-title"
+>
+  <header
+    class="mx-auto mb-64 grid max-w-[1280px] grid-cols-[0.45fr_1fr_0.75fr] items-end gap-32 max-md:grid-cols-1 max-md:gap-20"
+  >
+    <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-race-blue uppercase">
+      09 / Content
+    </p>
+    <h2
+      id="content-title"
+      class="font-[var(--font-dpardo-display)] text-[clamp(52px,8vw,104px)] leading-[0.84] font-extrabold tracking-[-0.035em] uppercase"
+    >
+      Evidencia<br />con carácter.
+    </h2>
+    <p class="max-w-[470px] text-[17px] leading-[1.7] text-[#4c5664]">
+      La card profesional explica. La card editorial atrae. Cada una usa una sola señal dominante.
+    </p>
   </header>
 
-  <div class="card-grid">
-    <article class="content-card featured-card">
-      <div class="card-meta"><span>CASE / 01</span><span class="badge blue">ACTIVE</span></div>
-      <h3>Angular architecture</h3>
-      <p>Sistemas frontend mantenibles con decisiones explícitas y una entrega verificable.</p>
-      <div class="metric"><strong>22</strong><span>Framework<br>version</span></div>
+  <div class="mx-auto grid max-w-[1280px] grid-cols-3 gap-16 max-md:grid-cols-1">
+    <article
+      data-card-variant="professional"
+      class="relative min-h-400 rounded-dpardo-business border border-[#cfd5de] bg-white p-32 shadow-dpardo-soft"
+    >
+      <div class="h-4 w-72 bg-dpardo-spectrum" aria-hidden="true"></div>
+      <div
+        class="mt-32 flex items-center justify-between text-[10px] font-bold tracking-[0.14em] text-[#66717f]"
+      >
+        <span>EVIDENCE / 01</span
+        ><span class="rounded-full bg-dpardo-race-blue px-10 py-6 text-white">BASE</span>
+      </div>
+      <h3 class="mt-48 text-[30px] leading-tight font-bold">Angular architecture</h3>
+      <p class="mt-18 max-w-[34ch] leading-[1.65] text-[#56616f]">
+        Sistemas frontend mantenibles con decisiones explícitas, accesibilidad y una entrega
+        verificable.
+      </p>
+      <p class="absolute right-32 bottom-28 text-[13px] font-bold text-dpardo-race-blue">
+        Senior expertise
+      </p>
     </article>
-    <article class="content-card dark-card">
-      <div class="card-meta"><span>STATUS / LIVE</span><span class="badge cyan">READY</span></div>
-      <h3>Technical leadership</h3>
-      <p>Dirección clara, implementación hands-on y mejora continua del equipo.</p>
-      <div class="mini-bars" aria-hidden="true"><i></i><i></i><i></i></div>
+    <article
+      data-card-variant="editorial"
+      class="technical-card relative min-h-400 overflow-hidden bg-dpardo-navy p-32 text-white"
+    >
+      <div
+        class="flex items-center justify-between text-[10px] font-bold tracking-[0.14em] text-[#c4ccd7]"
+      >
+        <span>EDITORIAL / 02</span
+        ><span class="rounded-full bg-dpardo-race-red px-10 py-6">RACING</span>
+      </div>
+      <strong
+        class="mt-72 block font-[var(--font-dpardo-display)] text-[112px] leading-[0.72] text-dpardo-signal-cyan"
+        >12+</strong
+      >
+      <h3
+        class="mt-24 font-[var(--font-dpardo-display)] text-[42px] leading-[0.95] font-bold uppercase"
+      >
+        Años construyendo software
+      </h3>
+      <p class="mt-18 max-w-[30ch] text-[14px] leading-[1.6] text-[#c4ccd7]">
+        Poco texto, una métrica y una geometría dominante.
+      </p>
     </article>
-    <article class="content-card plate-card">
-      <div class="card-meta"><span>PROFILE / DP</span><span class="badge red">PRIORITY</span></div>
-      <div class="profile-number">12+</div>
-      <h3>Años construyendo software</h3>
-      <p>Experiencia profesional convertida en criterio técnico.</p>
+    <article
+      data-card-variant="combined"
+      class="relative min-h-400 border border-[#303844] bg-dpardo-graphite p-32 text-white"
+    >
+      <div
+        class="flex items-center justify-between text-[10px] font-bold tracking-[0.14em] text-dpardo-steel"
+      >
+        <span>SYSTEM / 03</span
+        ><span class="rounded-full bg-dpardo-signal-cyan px-10 py-6 text-dpardo-ink">COMBINED</span>
+      </div>
+      <h3 class="mt-64 text-[30px] leading-tight font-bold">Technical leadership</h3>
+      <p class="mt-18 max-w-[34ch] leading-[1.65] text-[#bac2cd]">
+        Dirección clara, implementación hands-on y mejora continua del equipo.
+      </p>
+      <div class="absolute inset-x-32 bottom-32 h-6 bg-dpardo-spectrum" aria-hidden="true"></div>
     </article>
   </div>
 </section>
 
-<section id="data-feedback" class="section data-section" aria-labelledby="data-feedback-title">
-  <header class="section-header inverse">
-    <p class="eyebrow">10 / DATA + FEEDBACK</p>
-    <h2 id="data-feedback-title">Status at<br>a glance.</h2>
-    <p>Mensajes, tablas y progreso con información explícita y movimiento contenido.</p>
+<section
+  id="data-feedback"
+  class="bg-dpardo-graphite px-[clamp(24px,5vw,72px)] py-[clamp(72px,10vw,144px)]"
+  aria-labelledby="data-feedback-title"
+>
+  <header
+    class="mx-auto mb-64 grid max-w-[1280px] grid-cols-[0.45fr_1fr_0.75fr] items-end gap-32 max-md:grid-cols-1 max-md:gap-20"
+  >
+    <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-signal-cyan uppercase">
+      10 / Data + feedback
+    </p>
+    <h2
+      id="data-feedback-title"
+      class="font-[var(--font-dpardo-display)] text-[clamp(52px,8vw,104px)] leading-[0.84] font-extrabold tracking-[-0.035em] uppercase"
+    >
+      Estado de<br />un vistazo.
+    </h2>
+    <p class="max-w-[470px] text-[17px] leading-[1.7] text-[#bac2cd]">
+      Mensajes y datos conservan lenguaje explícito, superficies estables y color redundante.
+    </p>
   </header>
 
-  <div class="feedback-grid">
-    <div class="alerts">
-      <article class="alert info"><span aria-hidden="true">i</span><div><h3>Información</h3><p>El sistema está listo para la siguiente etapa.</p></div></article>
-      <article class="alert success"><span aria-hidden="true">✓</span><div><h3>Completado</h3><p>Todos los controles superaron la validación.</p></div></article>
-      <article class="alert error"><span aria-hidden="true">!</span><div><h3>Requiere atención</h3><p>Revisa los campos indicados antes de continuar.</p></div></article>
-      <div class="toast" role="status"><span aria-hidden="true">✓</span><p><b>Cambios guardados</b><br>La actualización quedó registrada.</p></div>
+  <div class="mx-auto grid max-w-[1280px] grid-cols-[1.1fr_0.9fr] gap-16 max-md:grid-cols-1">
+    <div class="flex flex-col gap-12">
+      <article class="flex gap-16 border-l-4 border-dpardo-race-blue bg-white p-20 text-dpardo-ink">
+        <span
+          class="grid size-28 shrink-0 place-items-center rounded-full bg-dpardo-race-blue font-extrabold text-white"
+          aria-hidden="true"
+          >i</span
+        >
+        <div>
+          <h3 class="text-[14px] font-bold">Información</h3>
+          <p class="mt-4 text-[13px] text-[#5a6573]">
+            El sistema está listo para la siguiente etapa.
+          </p>
+        </div>
+      </article>
+      <article class="flex gap-16 border-l-4 border-[#16733d] bg-white p-20 text-dpardo-ink">
+        <span
+          class="grid size-28 shrink-0 place-items-center rounded-full bg-[#16733d] font-extrabold text-white"
+          aria-hidden="true"
+          >✓</span
+        >
+        <div>
+          <h3 class="text-[14px] font-bold">Completado</h3>
+          <p class="mt-4 text-[13px] text-[#5a6573]">
+            Todos los controles superaron la validación.
+          </p>
+        </div>
+      </article>
+      <article class="flex gap-16 border-l-4 border-dpardo-race-red bg-white p-20 text-dpardo-ink">
+        <span
+          class="grid size-28 shrink-0 place-items-center rounded-full bg-dpardo-race-red font-extrabold text-white"
+          aria-hidden="true"
+          >!</span
+        >
+        <div>
+          <h3 class="text-[14px] font-bold">Requiere atención</h3>
+          <p class="mt-4 text-[13px] text-[#5a6573]">
+            Revisa los campos indicados antes de continuar.
+          </p>
+        </div>
+      </article>
+      <div
+        class="ml-auto flex w-[90%] gap-16 rounded-[8px] border border-[#d5dae1] bg-white p-20 text-dpardo-ink shadow-dpardo-soft max-md:w-full"
+        role="status"
+      >
+        <span
+          class="grid size-28 shrink-0 place-items-center rounded-full bg-[#16733d] font-extrabold text-white"
+          aria-hidden="true"
+          >✓</span
+        >
+        <p class="text-[13px] leading-[1.5]">
+          <b>Cambios guardados</b><br />La actualización quedó registrada.
+        </p>
+      </div>
     </div>
-
-    <article class="progress-card">
-      <p class="specimen-label">SYSTEM PROGRESS</p>
-      <div class="progress-value"><strong>88</strong><span>%</span></div>
-      <div class="progress-track" role="progressbar" aria-label="Progreso del sistema" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><i></i></div>
-      <div class="progress-meta"><span>VALIDATING</span><span>04 / 05</span></div>
-      <div class="loaders" aria-label="Ejemplos de carga">
-        <span class="spinner" aria-label="Cargando"></span>
-        <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div>
+    <article class="min-h-420 bg-dpardo-navy p-36">
+      <p class="text-[10px] font-bold tracking-[0.18em] text-dpardo-signal-cyan uppercase">
+        SYSTEM PROGRESS
+      </p>
+      <div class="mt-54">
+        <strong class="font-[var(--font-dpardo-display)] text-[128px] leading-[0.75]">88</strong
+        ><span class="font-[var(--font-dpardo-display)] text-[36px]">%</span>
+      </div>
+      <div
+        class="mt-32 h-8 bg-white/15"
+        role="progressbar"
+        aria-label="Progreso del sistema"
+        aria-valuenow="88"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <i class="block h-full w-[88%] bg-dpardo-race-blue"></i>
+      </div>
+      <div class="mt-12 flex justify-between text-[10px] tracking-[0.15em] text-[#c4ccd6]">
+        <span>VALIDATING</span><span>04 / 05</span>
+      </div>
+      <div class="mt-64 flex items-center gap-28" aria-label="Ejemplos de carga">
+        <span
+          class="size-42 animate-spin rounded-full border-[3px] border-white/20 border-t-dpardo-signal-cyan motion-reduce:animate-none"
+          aria-label="Cargando"
+        ></span>
+        <div class="flex-1 space-y-10" aria-hidden="true">
+          <i class="block h-10 bg-white/12"></i><i class="block h-10 w-[78%] bg-white/12"></i
+          ><i class="block h-10 w-[55%] bg-white/12"></i>
+        </div>
       </div>
     </article>
   </div>
 
-  <div class="table-wrapper" tabindex="0" role="region" aria-label="Tabla de métricas, deslizable horizontalmente en pantallas pequeñas">
-    <table>
-      <caption>Rendimiento del sistema</caption>
-      <thead><tr><th scope="col">Módulo</th><th scope="col">Estado</th><th scope="col">Cobertura</th><th scope="col">Última ejecución</th></tr></thead>
+  <div
+    class="mx-auto mt-16 max-w-[1280px] overflow-x-auto focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-signal-cyan"
+    tabindex="0"
+    role="region"
+    aria-label="Tabla de métricas, deslizable horizontalmente en pantallas pequeñas"
+  >
+    <table class="w-full min-w-720 border-collapse bg-white text-dpardo-ink">
+      <caption
+        class="bg-dpardo-navy px-24 py-20 text-left font-[var(--font-dpardo-display)] text-[24px] font-bold text-white uppercase"
+      >
+        Rendimiento del sistema
+      </caption>
+      <thead>
+        <tr class="text-[10px] tracking-[0.14em] text-[#5a6573] uppercase">
+          <th class="h-56 border-b border-[#dce1e7] px-24 text-left" scope="col">Módulo</th>
+          <th class="h-56 border-b border-[#dce1e7] px-24 text-left" scope="col">Estado</th>
+          <th class="h-56 border-b border-[#dce1e7] px-24 text-left" scope="col">Cobertura</th>
+        </tr>
+      </thead>
       <tbody>
-        <tr><th scope="row">Core interface</th><td><span class="status-dot ready">Ready</span></td><td>96%</td><td>14:32:08</td></tr>
-        <tr><th scope="row">Design tokens</th><td><span class="status-dot ready">Ready</span></td><td>100%</td><td>14:31:44</td></tr>
-        <tr><th scope="row">Motion layer</th><td><span class="status-dot review">Review</span></td><td>72%</td><td>14:28:17</td></tr>
+        <tr>
+          <th class="h-56 border-b border-[#dce1e7] px-24 text-left text-[14px]" scope="row">
+            Core interface
+          </th>
+          <td class="h-56 border-b border-[#dce1e7] px-24 text-[13px]">
+            <span class="mr-8 inline-block size-8 rounded-full bg-[#16733d]"></span>Ready
+          </td>
+          <td class="h-56 border-b border-[#dce1e7] px-24 text-[13px]">96%</td>
+        </tr>
+        <tr>
+          <th class="h-56 border-b border-[#dce1e7] px-24 text-left text-[14px]" scope="row">
+            Design tokens
+          </th>
+          <td class="h-56 border-b border-[#dce1e7] px-24 text-[13px]">
+            <span class="mr-8 inline-block size-8 rounded-full bg-[#16733d]"></span>Ready
+          </td>
+          <td class="h-56 border-b border-[#dce1e7] px-24 text-[13px]">100%</td>
+        </tr>
       </tbody>
     </table>
   </div>
