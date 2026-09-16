@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Logo } from '@shared/components/logo/logo';
 
 @Component({
   selector: 'app-accessibility-showcase',
-  imports: [],
+  imports: [Logo],
   templateUrl: './accessibility-showcase.html',
   styleUrl: './accessibility-showcase.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

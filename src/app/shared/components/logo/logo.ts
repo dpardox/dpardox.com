@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class Logo {
   public readonly mode = input<'light' | 'dark'>('light');
+  public readonly monochrome = input(false);
 }
