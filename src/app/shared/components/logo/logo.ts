@@ -4,7 +4,6 @@ import { Component, input } from '@angular/core';
   selector: 'app-logo',
   imports: [],
   templateUrl: './logo.html',
-  styleUrl: './logo.css',
 })
 export class Logo {
   public readonly mode = input<'light' | 'dark'>('light');

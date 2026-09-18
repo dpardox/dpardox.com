@@ -7,7 +7,6 @@ import { Card } from '@shared/components/card/card';
   selector: 'app-networks',
   imports: [Card],
   templateUrl: './networks.html',
-  styleUrl: './networks.css',
 })
 export class Networks {
   private readonly networksService = inject(NetworksService);

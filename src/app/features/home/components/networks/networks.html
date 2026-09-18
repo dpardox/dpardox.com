@@ -1,32 +1,28 @@
-<section class="bg-[url('/images/backgrounds/laptop.jpg')] bg-laptop bg-fixed bg-center bg-cover">
-  <div class="bg-[linear-gradient(rgba(220,20,60,.1),rgba(70,130,180,.1))]">
-    <div class="px-24 py-48 md:py-88">
-      <div class="container">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-24">
-          @for (network of networks(); track network.name) {
-            <a [href]="network.link" target="_blank">
-              <app-card>
-                <div class="flex flex-col items-start">
-                  <figure>
-                    <img
-                      src="images/networks/{{ network.image }}"
-                      alt="{{ network.name }}"
-                      width="34"
-                      height="34"
-                      class="h-34 w-34"
-                    />
-                  </figure>
-                  <hr
-                    class="mt-20 h-2 w-40 border-0 bg-[linear-gradient(270deg,#0092f4_-12.86%,#d054ce_105%)]"
-                  />
-                  <div class="mt-16 text-xl font-bold">{{ network.name }}</div>
-                  <div class="mt-12 text-base text-gray-500">{{ network.user }}</div>
-                </div>
-              </app-card>
-            </a>
-          }
-        </div>
-      </div>
+<section class="bg-dpardo-smoke py-64 md:py-96" aria-labelledby="networks-title">
+  <div class="mx-auto w-full max-w-[1280px] px-24 md:px-40 lg:px-64">
+    <header class="mb-40">
+      <p class="mb-12 text-[12px] font-bold tracking-[0.16em] text-dpardo-navy uppercase">Conexiones</p>
+      <h2 id="networks-title" class="font-dpardo-display text-[clamp(40px,6vw,72px)] leading-[0.9] font-bold">Mis redes</h2>
+    </header>
+    <div class="grid grid-cols-1 gap-24 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
+      @for (network of networks(); track network.name) {
+        <a [href]="network.link" target="_blank" rel="noopener noreferrer" class="group block h-full rounded-[8px] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-race-blue">
+          <app-card>
+            <div class="flex flex-col items-start">
+              <img
+                src="images/networks/{{ network.image }}"
+                alt=""
+                width="34"
+                height="34"
+                class="h-34 w-34"
+              />
+              <span class="mt-24 h-4 w-40 bg-dpardo-race-blue" aria-hidden="true"></span>
+              <h3 class="mt-16 text-[20px] leading-[1.4] font-bold">{{ network.name }}</h3>
+              <p class="mt-8 text-[16px] leading-[1.6] text-dpardo-navy">{{ network.user }}</p>
+            </div>
+          </app-card>
+        </a>
+      }
     </div>
   </div>
 </section>

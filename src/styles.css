@@ -2,9 +2,7 @@
 
 @theme {
   --spacing: 1px;
-  --font-sans: 'Nunito', Helvetica, Arial, sans-serif;
-  --color-primary: #001a30;
-  --color-secondary: #db0a40;
+  --font-sans: 'Open Sans', Helvetica, Arial, sans-serif;
   --color-dpardo-wordmark-ink: #001a30;
   --color-dpardo-wordmark-dot: #db0a40;
   --color-dpardo-wordmark-inverse: #ffffff;
@@ -17,10 +15,9 @@
   --color-dpardo-signal-cyan: #00a6d6;
   --color-dpardo-race-red: #d90429;
   --color-dpardo-steel: #8d98a7;
-  --color-dpardo-brand-blue: #0e63f4;
-  --color-dpardo-action-red: #d90429;
   --font-dpardo-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
   --font-dpardo-body: 'Open Sans', Helvetica, Arial, sans-serif;
+  --font-dpardo-wordmark: 'Nunito', Helvetica, Arial, sans-serif;
   --background-image-dpardo-spectrum: linear-gradient(
     90deg,
     var(--color-dpardo-race-red) 0%,
@@ -33,15 +30,6 @@
 
 @layer base {
   body {
-    @apply font-sans leading-normal text-[#212529];
-  }
-}
-
-@layer utilities {
-  .container {
-    width: 100%;
-    max-width: 1080px;
-    margin-right: auto;
-    margin-left: auto;
+    @apply font-sans leading-normal text-dpardo-ink;
   }
 }

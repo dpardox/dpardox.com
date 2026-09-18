@@ -1,16 +1,14 @@
-<footer class="relative bg-primary before:absolute before:inset-0 before:z-0 before:bg-[url('/images/backgrounds/tribal.png')] before:bg-repeat before:invert before:content-[''] after:absolute after:left-0 after:top-0 after:z-10 after:block after:h-4 after:w-full after:bg-[linear-gradient(90deg,#ff4800_0,#d054bc_26.56%,#0092f4_54.69%,#0092f4_54.7%,#15c474_100%)] after:content-['']">
-  <div class="px-24 py-48 relative z-20">
-    <div class="container">
-      <div class="mb-64">
-        <a class="inline-block cursor-pointer" routerLink="/">
-          <app-logo mode="dark" />
-        </a>
-      </div>
-      <p class="text-gray-400 mb-6 flex flex-col sm:flex-row sm:items-center sm:gap-8">
-        <span>© 2012-{{ year() }} Donovan Pardo.</span>
-        <span>All Rights Reserved.</span>
-      </p>
-      <p class="text-white">Made in <strong>Colombia</strong>.</p>
+<footer class="border-t-4 border-dpardo-race-blue bg-dpardo-ink text-dpardo-white">
+  <div class="mx-auto w-full max-w-[1280px] px-24 py-48 md:px-40 md:py-64 lg:px-64">
+    <div class="mb-48">
+      <a class="inline-flex min-h-44 items-center rounded-[4px] focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-dpardo-signal-cyan" routerLink="/">
+        <app-logo mode="dark" />
+      </a>
     </div>
+    <p class="mb-8 flex flex-col gap-4 text-dpardo-steel sm:flex-row sm:items-center sm:gap-8">
+      <span>© 2012-{{ year() }} Donovan Pardo.</span>
+      <span>All Rights Reserved.</span>
+    </p>
+    <p>Made in <strong>Colombia</strong>.</p>
   </div>
 </footer>

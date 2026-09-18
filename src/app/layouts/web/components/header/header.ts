@@ -6,7 +6,6 @@ import { Logo } from '@shared/components/logo/logo';
   selector: 'app-header',
   imports: [Logo, RouterLink],
   templateUrl: './header.html',
-  styleUrl: './header.css',
 })
 export class Header {
 

@@ -8,7 +8,6 @@ import { CvDocumentMetadataService } from './services/cv-document-metadata';
   selector: 'app-cv',
   imports: [Web],
   templateUrl: './cv.html',
-  styleUrl: './cv.css',
   providers: [CvDocumentMetadataService],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

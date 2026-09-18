@@ -7,7 +7,6 @@ import { Web } from "@layouts/web/web";
   selector: 'app-home',
   imports: [Banner, Networks, Web],
   templateUrl: './home.html',
-  styleUrl: './home.css',
 })
 export default class Home {
 
