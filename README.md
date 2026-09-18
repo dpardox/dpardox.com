@@ -1,59 +1,27 @@
-# Dpardox
+# dpardox.com
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Código de la web profesional de Donovan Pardo, desarrollada con Angular y TypeScript. La sección [CV digital](https://dpardox.com/cv) presenta su experiencia profesional y enlaza los canales de contacto. El sitio también incluye una [guía visual](https://dpardox.com/style-guide) de sus componentes e identidad.
 
-## Development server
+## Ver el proyecto
 
-To start a local development server, run:
+- Web: [dpardox.com](https://dpardox.com)
+- CV digital: [dpardox.com/cv](https://dpardox.com/cv)
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Desarrollo local
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+El servidor local inicia en `http://localhost:4600/`.
+
+## Verificación
 
 ```bash
-ng generate --help
+npm run build
+npm run test:ci
+npm run lint
 ```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+El contenido profesional de esta web se sincroniza desde la memoria canónica de `dpardo-lab`. Las instrucciones de mantenimiento están en el repositorio del lab; este README describe el proyecto público y cómo explorarlo.
