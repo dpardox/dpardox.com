@@ -34,8 +34,11 @@ describe('CV', () => {
     expect(pageContent).toContain('AI-assisted Spec-Driven Development');
     expect(pageContent).toContain('Noviembre de 2017');
     expect(pageContent).toContain('Marzo de 2016');
-    expect(pageContent).toContain('Octubre de 2012');
-    expect(pageContent).toContain('Tecnólogo en Análisis y Desarrollo de Sistemas de Información');
+    expect(pageContent).toContain('Desarrollo software profesionalmente desde 2012');
+    expect(pageContent).toContain('prograCOL');
+    expect(pageContent).toContain('BigPass Edenred');
+    expect(pageContent).toContain('Tecnología en análisis y desarrollo de sistemas de información');
+    expect(pageContent).toContain('Milo International Language Center');
     expect(pageContent).toContain('Angular · TypeScript · RxJS · NgRx · Playwright');
   });
 
@@ -44,8 +47,9 @@ describe('CV', () => {
 
     expect(element.querySelector('h1')?.textContent).toContain('Donovan Pardo');
     expect(element.querySelector('nav[aria-label="Datos de contacto"]')).toBeTruthy();
-    expect(element.querySelectorAll('article')).toHaveLength(6);
-    expect(element.querySelectorAll('time')).toHaveLength(11);
+    expect(element.querySelector('section[aria-labelledby="professional-experience-heading"]')).toBeTruthy();
+    expect(element.querySelector('section[aria-labelledby="education-heading"]')).toBeTruthy();
+    expect(element.querySelector('section[aria-labelledby="skills-heading"]')).toBeTruthy();
     expect(element.querySelector('a[href="https://dpardox.com"]')?.textContent).toContain('dpardox.com');
   });
 
