@@ -9,7 +9,7 @@ const requiredFragments = [
   'Currículum profesional',
   'Noviembre de 2017',
   'Marzo de 2016',
-  'Octubre de 2012',
+  'Desarrollo software profesionalmente desde 2012',
 ];
 
 verifyStaticCv();

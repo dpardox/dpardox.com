@@ -53,10 +53,10 @@ describe('StyleGuide', () => {
     const identity = element.querySelector('#identity');
     const color = element.querySelector('#color');
 
-    expect(identity?.textContent).toContain('70% performance / 30% business');
+    expect(identity?.textContent).toContain('70% rendimiento / 30% negocio');
     expect(color?.textContent).toContain('BASE');
-    expect(color?.textContent).toContain('CANDIDATE');
-    expect(color?.textContent).toContain('DEPRECATED');
+    expect(color?.textContent).toContain('CANDIDATO');
+    expect(color?.textContent).toContain('OBSOLETO');
   });
 
   it('should expose professional, editorial and combined content variants', () => {
