@@ -48,7 +48,7 @@ describe('StyleGuide', () => {
     expect(element.querySelector('[role="status"]')).toBeTruthy();
   });
 
-  it('should communicate the revised visual direction and token states', () => {
+  it('should communicate the visual direction and supported token states', () => {
     const element = fixture.nativeElement as HTMLElement;
     const identity = element.querySelector('#identity');
     const color = element.querySelector('#color');
@@ -56,7 +56,6 @@ describe('StyleGuide', () => {
     expect(identity?.textContent).toContain('70% rendimiento / 30% negocio');
     expect(color?.textContent).toContain('BASE');
     expect(color?.textContent).toContain('CANDIDATO');
-    expect(color?.textContent).toContain('OBSOLETO');
   });
 
   it('should expose professional, editorial and combined content variants', () => {
