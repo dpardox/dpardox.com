@@ -23,5 +23,3 @@ npm run build
 npm run test:ci
 npm run lint
 ```
-
-El contenido profesional de esta web se sincroniza desde la memoria canónica de `dpardo-lab`. Las instrucciones de mantenimiento están en el repositorio del lab; este README describe el proyecto público y cómo explorarlo.
